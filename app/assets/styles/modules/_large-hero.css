@@ -1,0 +1,104 @@
+.large-hero {
+    border-bottom: 10px solid $mainBlue;
+        position: relative;
+        height: 450px;
+        overflow: hidden;
+
+    @mixin atSmall {
+        border-bottom: 10px solid $mainBlue;
+        position: relative;
+        height: 600px;
+        overflow: hidden;
+    }
+
+    &__transperancy {
+        z-index: 0;
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        box-shadow: inset 0 0 100px black;
+    }
+
+    &__image {
+        z-index: -1;
+        position: absolute;
+        display: block;
+        /* Position the image in the middle of its container. */
+        top: -9999px;
+        right: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        margin: auto;
+        /* The following values determine the exact image behaviour. */
+        /* You can simulate background-size: cover/contain/etc.
+            by changing between min/max/standard width/height values.
+            These values simulate background-size: cover
+        */
+        min-width: 100%;
+        min-height: 100%;
+
+        @mixin atSmall {
+
+        }
+        }
+
+
+    &__text-content {
+        padding-top: 60px;
+        position: absolute;
+        top: 70%;
+        transform: translateY(-70%);
+        left: 0;
+        width: 100%;
+        text-align: center;
+
+        @mixin atSmall {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__title {
+        font-weight: 400;
+        color: #fff;
+        font-size: 2rem; /* Super tiny screen size */
+        margin: 0;
+        text-shadow: 3px 3px 0 rgba(0, 0, 0, .2);
+
+        @mixin atSmall {
+            font-size: 4.4rem;
+        }
+    }
+
+    hr {
+        border-top: 1.5px solid #fff;
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        color: #fff;
+        font-size: 1.5rem;
+        margin: 0;
+        text-shadow: 3px 3px 0 rgba(0, 0, 0, .2);
+
+        @mixin atSmall {
+            font-size: 2rem;
+        }
+    }
+
+    &__description {
+        max-width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: 400;
+        text-shadow: 3px 3px 0 rgba(0, 0, 0, .25);
+
+        @mixin atSmall {
+            font-size: 1.875rem;
+        }
+    }
+}

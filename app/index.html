@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+
+  <title>DBJW Webfolio</title>
+
+  <!-- Tab icon image link -->
+  <link rel="shortcut icon" type="image/png" href="assets/images/logos/DBJW_logo.png">
+
+  <meta name="keywords" content="graphic design, website design, website development, great graphic design">
+  <meta name="description" content="Designs by Josh Wren. Highly Experienced Graphic and Web Designer. Highly Experienced Web Developer.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrapper">
+      <div class="site-header__logo">
+        <img src="assets/images/logos/DBJW_logo.svg">
+      </div>
+      
+      <div class="site-header__menu-icon">
+        <div class="site-header__menu-icon__middle"></div>
+      </div>
+      
+      <div class="site-header__menu-content">
+        <div class="site-header__btn-container">
+          <a href="#" class="btn open-modal">Get in Touch</a>
+        </div>
+        <nav class="primary-nav primary-nav--pull-right">
+          <ul>
+            <li><a href="#our-beginning" id="our-beginning-link">About</a></li>
+            <li><a href="#features" id="features-link">Skills</a></li>
+            <li><a href="#testimonials" id="testimonials-link">Resume</a>
+              <ul>
+                <li><a href="#testimonials" id="testimonials-link">Qualifications</a></li>
+                <li><a href="#testimonials" id="testimonials-link">Work History</a></li>
+              </ul>
+            </li>
+            <li><a href="#testimonials" id="testimonials-link">Portfolio</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="large-hero">
+    <div class="large-hero__transperancy"></div>
+    <picture>
+      <source srcset="
+      assets/images/carousel_images/Hand_sketching.jpg 1920w, 
+      assets/images/carousel_images/Hand_sketching.jpg 3840w" 
+      media="(min-width: 1380px)"> <!-- Large screen sizes -->
+      <source srcset="
+      assets/images/carousel_images/Hand_sketching.jpg 1380w, 
+      assets/images/carousel_images/Hand_sketching.jpg 2760w" 
+      media="(min-width: 990px)"> <!-- Medium screen sizes -->
+      <source srcset="
+      assets/images/carousel_images/Hand_sketching.jpg 990w, 
+      assets/images/carousel_images/Hand_sketching.jpg 1980w" 
+      media="(min-width: 640px)"> <!-- Small screen sizes -->
+      <img srcset="
+      assets/images/carousel_images/Hand_sketching.jpg 640w, 
+      assets/images/carousel_images/Hand_sketching.jpg 1280w" 
+      alt="" class="large-hero__image"> <!-- Smallest screen sizes -->
+    </picture>
+
+    <div class="large-hero__text-content">
+      <div class="wrapper">
+        <h1 class="large-hero__title">JOSH WREN</h1>
+        <hr>
+        <h2 class="large-hero__subtitle">DESIGNER // DEVELOPER</h2>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+  <div id="our-beginning" class="page-section" data-matching-link="#our-beginning-link">
+    <div class="wrapper">
+      <h2 class="headline headline--centered headline--light headline--b-margin-small">WELCOME TO <strong>MY WEBFOLIO</strong></h2>
+      <h3 class="headline headline--centered headline--orange headline--small headline--narrow headline--b-margin-large">I am a highly skilled<br><strong>Graphic Designer and Web Developer</strong><br>living in Canberra, ACT Australia</h3>
+      <br>
+      <!-- ABOUT SECTION START -->
+      <div class="row row--gutters">
+        <div class="row__col-md-4 row__col-md-4--larger row__b-margin-until-md">
+          <picture>
+            <!-- Large screen imagery -->
+            <source sizes="404px" data-srcset="assets/images/our-start-i.jpg 404w, assets/images/our-start-hi-dpi-i.jpg 808w" media="(min-width: 1020px)">
+            <!-- Medium screen imagery -->
+            <source sizes="320px" data-srcset="assets/images/our-start-portrait-i.jpg 382w, assets/images/our-start-portrait-hi-dpi-i.jpg 764w" media="(min-width: 800px)">
+            <!-- Small screen imagery -->
+            <img class="lazyload" data-srcset="assets/images/our-start-landscape-i.jpg 800w, assets/images/our-start-landscape-hi-dpi-i.jpg 1600w" alt="Our founder, Jane Doe">
+          </picture>
+        </div>
+
+        <div class="row__col-md-8 row__col-md-8--smaller">
+          <div class="generic-content-container">
+            <p>Hi, my name is <strong>Joshua Wren</strong> and I am a highly motivated and courageous Graphic Designer, Signage/Wayfinding Designer and Web Developer, living in Canberra ACT. I am extremely interested in all parts of design, but particularly enjoy publication design, infographic design and web design/development in general.</p>
+            <p>I have a Bachelor Degree in Graphic Design & Multi-Media acquired through my studies through the University of Canberra (UC). Along with that I posses an Advanced Diploma in Graphic Design & Digital Media studied through Canberra Institute of Technology (CIT).</p>
+            <p>I am currently studying for a Bachelor Degree in Web Design and Production through the University of Canberra (UC) in order to develop my skills and experience within digital design and production.</p>
+            <p>I have been in the design industry for over ten years – three and a half years within signage design/production and eight plus years within print and digital design.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ABOUT SECTION END -->
+  <!-- SKILLS SECTION START -->
+  <div id="skills" class="page-section page-section--blue">
+    <div class="wrapper">
+      <h2 class="section-title"><img class="section-title__icon" src="assets/images/icons/star.svg">My <strong>Skills</strong></h2>
+
+      <div class="row row--gutters-large generic-content-container">
+        <div class="row__col-md-6">
+          <div class="skills-item">
+            <img src="assets/images/icons/rain.svg" class="skills-item__icon">
+            <h3 class="skills-item__title">Graphic Design Skills</h3>
+            <p>I am a highly creative and multitalented Graphic Designer with extensive experience in multimedia, marketing and print design. I also posses a vast set of skills within signage design and production with years of experience acquired within that field. I have a unique mix of creativity, time management, problem solving and technical skill proven by 10+ years of experience.</p>
+
+            <h4 class="skills-item__subtitle">Creativity</h4>
+            <div class="skills-item__percent-bar">
+              <div class="skills-item__percent-bar--inner" 
+              style="width: 85%; height: 100%;">
+                <p>85%</p>
+              </div>
+            </div>
+
+            <h4 class="skills-item__subtitle">Styling</h4>
+            <div class="skills-item__percent-bar">
+              <div class="skills-item__percent-bar--inner" 
+              style="width: 80%; height: 100%;">
+                <p>80%</p>
+              </div>
+            </div>
+
+            <h4 class="skills-item__subtitle">Drawing</h4>
+            <div class="skills-item__percent-bar">
+              <div class="skills-item__percent-bar--inner" 
+              style="width: 65%; height: 100%;">
+                <p>65%</p>
+              </div>
+            </div>
+
+            <h4 class="skills-item__subtitle">Adobe Creative Suite Skills</h4>
+            <div class="skills-item__percent-bar">
+              <div class="skills-item__percent-bar--inner" 
+              style="width: 85%; height: 100%;">
+                <p>85%</p>
+              </div>
+            </div>
+
+            <h4 class="skills-item__subtitle">Microsoft Office Skills</h4>
+            <div class="skills-item__percent-bar">
+              <div class="skills-item__percent-bar--inner" 
+              style="width: 75%; height: 100%;">
+                <p>75%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row__col-md-6">
+          <div class="skills-item">
+            <img src="assets/images/icons/rain.svg" class="skills-item__icon">
+            <h3 class="skills-item__title">Web Development Skills</h3>
+            <p>I am a highly experienced Web Developer specialising in front end Web Development. I am experienced with all stages of the development cycle, building, maintaining and optimising the performance of user-centric, high-impact dynamic websites. I am well versed in numerous programming languages as shown below and specialise in Wordpress based Content Management System (CMS) websites.</p>
+
+            <h4 class="skills-item__subtitle">HTML 5</h4>
+            <div class="skills-item__percent-bar">
+              <div class="skills-item__percent-bar--inner" 
+              style="width: 75%; height: 100%;">
+                <p>75%</p>
+              </div>
+            </div>
+
+            <h4 class="skills-item__subtitle">CSS 3/SASS</h4>
+            <div class="skills-item__percent-bar">
+              <div class="skills-item__percent-bar--inner" 
+              style="width: 70%; height: 100%;">
+                <p>70%</p>
+              </div>
+            </div>
+
+            <h4 class="skills-item__subtitle">JavaScript/Jquery</h4>
+            <div class="skills-item__percent-bar">
+              <div class="skills-item__percent-bar--inner" 
+              style="width: 55%; height: 100%;">
+                <p>55%</p>
+              </div>
+            </div>
+
+            <h4 class="skills-item__subtitle">PHP</h4>
+            <div class="skills-item__percent-bar">
+              <div class="skills-item__percent-bar--inner" 
+              style="width: 60%; height: 100%;">
+                <p>60%</p>
+              </div>
+            </div>
+
+            <h4 class="skills-item__subtitle">Content Management System's (CMS)</h4>
+            <div class="skills-item__percent-bar">
+              <div class="skills-item__percent-bar--inner" 
+              style="width: 70%; height: 100%;">
+                <p>70%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- SKILLS SECTION END -->
+  <!-- QUALIFICATIONS SECTION START -->
+  <div id="qualifications" class="page-section page-section--no-b-padding-until-lg page-section--qualifications" data-matching-link="#qualifications-link">
+    <div class="wrapper wrapper--no-padding-until-lg">
+      
+      <h2 class="section-title section-title--blue"><img class="section-title__icon" src="assets/images/icons/comment.svg"> My <strong>Qualifications</strong></h2>
+
+      <div class="row row--gutters row--equal-height-at-lg row--t-padding generic-content-container">
+        <div class="row__col-lg-4">
+          <div class="qualifications">
+            <div class="qualifications__photo">
+              <img class="lazyload"
+              sizes="160px"
+              data-srcset="assets/images/Web-development.jpg 160w, 
+              assets/images/Web-development.jpg 320w"
+              alt="">
+            </div>
+            <h3 class="qualifications__title"><strong>Bachelor Degree</strong> of Web Design and Production</h3>
+            <h4 class="qualifications__subtitle">Currently studying at: University of Canberra (ACT)</h4>
+            <p>This major provides specialist practical study in web design and production. Through integrated practical and theoretical study students will gain technical, conceptual and critical understanding of web design in a range of forms and cultural contexts.</p>
+            <h4 class="qualifications__subtitle">Dates: 2017 - Present</h4>
+          </div>
+        </div>
+
+        <div class="row__col-lg-4">
+          <div class="qualifications">
+            <div class="qualifications__photo">
+              <img class="lazyload" 
+              sizes="160px"
+              data-srcset="assets/images/Graphic-Design.jpg 160w, 
+              assets/images/Graphic-Design.jpg 320w"
+              alt="">
+            </div>
+            <h3 class="qualifications__title"><strong>Bachelor Degree</strong> of Graphic Design</h3>
+            <h4 class="qualifications__subtitle">Achieved at: University of Canberra (ACT)</h4>
+            <p>This major provides specialist practical study in graphic design. Students will gain a thorough understanding of graphic design principles and techniques in a range of media, and an understanding of related professional and cultural practice and contexts.</p>
+            <h4 class="qualifications__subtitle">Date: 2011</h4>
+          </div>
+        </div>
+
+        <div class="row__col-lg-4">
+          <div class="qualifications qualifications--last">
+            <div class="qualifications__photo">
+              <img class="lazyload" 
+              sizes="160px"
+              data-srcset="assets/images/Digital-Media.jpg 160w, assets/images/Digital-Media.jpg 320w">
+            </div>
+            <h3 class="qualifications__title"><strong>Advanced Diploma</strong> of Digital Media</h3>
+            <h4 class="qualifications__subtitle">Achieved at: CIT Reid campus (ACT)</h4>
+            <p>This qualification provides you with the skills and knowledge to be competent in a wide range of general information and communications technology (ICT) technical functions and to achieve a degree of self-sufficiency as an advanced ICT user.</p>
+            <h4 class="qualifications__subtitle">Dates: 2008 - 2010</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- QUALIFICATIONS SECTION END -->
+  <!-- PLACES OF WORK SECTION START -->
+  <div id="testimonials" class="page-section page-section--no-b-padding-until-lg page-section--testimontials" data-matching-link="#testimonials-link">
+    <div class="wrapper wrapper--no-padding-until-lg">
+      
+      <h2 class="section-title section-title--blue"><img class="section-title__icon" src="assets/images/icons/comment.svg"> Real <strong>Testimonials</strong></h2>
+
+      <div class="row row--gutters row--equal-height-at-lg row--gutters-small row--t-padding generic-content-container">
+        <div class="row__col-lg-4">
+          <div class="testimonial">
+            <div class="testimonial__photo">
+              <img class="lazyload"
+              sizes="160px"
+              data-srcset="assets/images/testimonial-jane-i.jpg 160w, 
+              assets/images/testimonial-jane-hi-dpi-i.jpg 320w"
+              alt="">
+            </div>
+            <h3 class="testimonial__title">Jane Doe</h3>
+            <h4 class="testimonial__subtitle">9 Time Escaper</h4>
+            <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
+          </div>
+        </div>
+
+        <div class="row__col-lg-4">
+          <div class="testimonial">
+            <div class="testimonial__photo">
+              <img class="lazyload" 
+              sizes="160px"
+              data-srcset="assets/images/testimonial-john-i.jpg 160w, 
+              assets/images/testimonial-john-hi-dpi-i.jpg 320w"
+              alt="">
+            </div>
+            <h3 class="testimonial__title">John Smith</h3>
+            <h4 class="testimonial__subtitle">4 Time Escaper</h4>
+            <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.&rdquo;</p>
+          </div>
+        </div>
+
+        <div class="row__col-lg-4">
+          <div class="testimonial testimonial--last">
+            <div class="testimonial__photo">
+              <img class="lazyload" 
+              sizes="160px"
+              data-srcset="assets/images/testimonial-cat-i.jpg 160w, assets/images/testimonial-cat-hi-dpi-i.jpg 320w">
+            </div>
+            <h3 class="testimonial__title">Cat McKitty</h3>
+            <h4 class="testimonial__subtitle">6 Time Escaper</h4>
+            <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.&rdquo;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- PLACES OF WORK SECTION END -->
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p><span class="site-footer__text">Copyright &copy; 2019 Clear View Escapes. All rights reserved.</span> <a href="#" class="btn btn--orange open-modal">Get in Touch</a></p>
+    </div>
+  </footer>
+</body>
+</html>
