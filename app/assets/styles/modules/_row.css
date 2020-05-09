@@ -40,6 +40,11 @@
             margin-bottom: 0;
         }
 
+        &__col-md-3 {
+            float: left;
+            width: 25%;
+        }
+
         &__col-md-4 {
             float: left;
             width: 33.33%;/* Each of the 12 columns is 8.333% */
@@ -68,6 +73,11 @@
 
         &__b-margin-until-lg {
             margin-bottom: 0;
+        }
+
+        &__col-md-3 {
+            float: left;
+            width: 25%;
         }
 
         &__col-lg-4 {

@@ -18,8 +18,9 @@
 @import "modules/_site-footer";
 @import "modules/_site-header";
 @import "modules/_primary-nav";
-@import "modules/_testimonial";
+@import "modules/_work-history";
 @import "modules/_section-title";
+@import "modules/_section-link";
 @import "modules/_wrapper";
 @import "modules/_reveal-item";
 @import "modules/_modal";
