@@ -7,6 +7,10 @@
         font-size: 3.75rem;
     }
 
+    &--qualifications {
+        margin-top: 6rem;
+    }
+
     strong {
         font-weight: 500;
     }
