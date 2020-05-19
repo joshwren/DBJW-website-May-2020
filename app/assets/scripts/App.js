@@ -6,8 +6,8 @@ import StickyHeader from './modules/StickyHeader'
 
 // Create an Object for our imported js //
 let stickyHeader = new StickyHeader()
-new RevealOnScroll(document.querySelectorAll(".feature-item"), 75)
-new RevealOnScroll(document.querySelectorAll(".testimonial"), 60)
+new RevealOnScroll(document.querySelectorAll(".skills-item"), 75)
+new RevealOnScroll(document.querySelectorAll(".qualifications"), 75)
 
 let mobileMenu = new MobileMenu();
 let modal

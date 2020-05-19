@@ -2,7 +2,7 @@
     padding: 10px 0;
     position: absolute;
     width: 100%;
-    z-index: 2;
+    z-index: 500;
     transition: background-color .3s ease-out;
     
     @mixin atMedium {
@@ -31,7 +31,7 @@
         left: 50%;
         transition: transform .3s ease-out;
         transform: translateX(-50%) scale(.8);
-        transform-origin: 50% 0;
+        transform-origin: -25% 0%;
         padding: 20px;
         width: auto;
 
@@ -47,9 +47,9 @@
     
         @mixin atMedium {
 
-          transform: translateX(0);
+          transform: translateX(-50%);
           padding: 10px;
-          left: 2.5%;
+          left: 50%;
 
     
           .site-header--dark & {
@@ -62,10 +62,11 @@
         width: 20px;
         height: 19px;
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 15px;
+        right: 15px;
         display: block;
-        z-index: 10; /* will help the button area be bigger */
+        z-index: 500; /* will help the button area be bigger */
+        cursor: pointer;
 
         @mixin atMedium {
             display: none;
@@ -108,6 +109,8 @@
     }
 
     &__menu-icon--close-x {
+        z-index: 500;
+        cursor: pointer;
 
         &::before {
             transform: rotate(45deg) scaleX(1.25);
@@ -134,14 +137,14 @@
 
         @mixin atMedium {
             opacity: 1;
-            z-index: 1;
+            z-index: 500;
             padding-top: 0;
             transform: scale(1);
         }
 
         &--is-visible {
             opacity: 1;
-            z-index: 1;
+            z-index: 500;
             transform: scale(1);
         }
     }

@@ -43,7 +43,7 @@
         font-size: 2rem;
         color: $mainBlue;
         transform: scaleX(1.2);
-        tranform-origin: 100% 0;
+        transform-origin: 100% 0;
         cursor: pointer;
 
         &:hover {
