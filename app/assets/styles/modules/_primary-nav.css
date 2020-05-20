@@ -1,5 +1,6 @@
 .primary-nav {
-    padding-top: 10px;
+    width: 100%;
+    
 
     @mixin atMedium {
         padding-top: 0;
@@ -17,6 +18,9 @@
         padding: 0;
         @mixin clearfix;
         list-style: none;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     li {
@@ -31,6 +35,20 @@
      
             /* padding-right: 20px;*/
             text-align: center;
+        }
+    }
+
+    li:nth-child(2) {
+
+        @mixin atMedium {
+            margin-right: 3rem;
+        }
+    }
+
+    li:nth-child(3) {
+
+        @mixin atMedium {
+        margin-left: 3rem;
         }
     }
 
