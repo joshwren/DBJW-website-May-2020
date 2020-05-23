@@ -1,8 +1,8 @@
 .large-hero {
     border-bottom: 10px solid $mainBlue;
-        position: relative;
-        height: 450px;
-        overflow: hidden;
+    position: relative;
+    min-height: 450px;
+    overflow: hidden;
 
     @mixin atSmall {
         border-bottom: 10px solid $mainBlue;
@@ -42,7 +42,7 @@
 
 
     &__text-content {
-        padding-top: 60px;
+        padding: 140px 0 40px 0;
         position: absolute;
         top: 70%;
         transform: translateY(-70%);
@@ -53,6 +53,7 @@
         @mixin atSmall {
             top: 50%;
             transform: translateY(-50%);
+            padding: 160px 0 40px 0;
         }
     }
 
@@ -83,13 +84,21 @@
     }
 
     hr {
-        width: 400px;
+        width: 275px;
         border-top: 1.5px solid #fff;
-        animation-name: moveInCenter;
-        animation-delay: 1s;
-        animation-duration: 2s;
-        animation-timing-function: ease-out;
-        animation-fill-mode: backwards;
+            animation-name: moveInCenter;
+            animation-delay: 1s;
+            animation-duration: 2s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: backwards;
+
+        @mixin atSmall {
+            width: 400px;
+        }
+
+        @mixin atMedium {
+            width: 400px;
+        }
         
         @keyframes moveInCenter {
             0% {
@@ -139,5 +148,14 @@
         @mixin atSmall {
             font-size: 1.875rem;
         }
+    }
+
+    &__btn-container {
+        margin-top: 1.5rem;
+
+        @mixin atMedium {
+            margin-top: 2rem;
+        }
+
     }
 }

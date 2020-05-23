@@ -47,4 +47,8 @@
         }
 
     }
+
+    &--works {
+        background-color: darkgray;
+    }
 }

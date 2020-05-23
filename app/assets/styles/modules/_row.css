@@ -5,6 +5,7 @@
         padding-top: 80px;
     }
 
+    /* GUTTER settings */
     &--gutters { 
         margin-right: -65px; /* Will counteract right padding */
     }
@@ -14,7 +15,7 @@
     }
 
     &--gutters-small {
-        mrgin-right: -45px;
+        margin-right: -45px;
     }
 
     &--gutters > div { /* To select all of its direct children */
@@ -30,16 +31,18 @@
         padding-right: 45px;
     }
 
+    /* MARGIN BOTTOM settings */
     &__b-margin-until-md {
         margin-bottom: 1rem;
     }
-
+    
     @mixin atMedium {
 
         &__b-margin-until-md {
             margin-bottom: 0;
         }
 
+        /* COLUMN MD 3ettings */
         &__col-md-3 {
             float: left;
             width: 25%;

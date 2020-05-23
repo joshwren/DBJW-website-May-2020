@@ -5,8 +5,18 @@
     padding: .75rem 1.2rem;
     display: inline-block;
 
+    &:hover {
+        background-color: $mainOrange;
+        color: $mainBlue;
+    }
+
     &--orange {
         background-color: $mainOrange;
+        
+        &:hover {
+            background-color: #fff;
+            color: $mainOrange;
+        }
     }
 
     &--large {
