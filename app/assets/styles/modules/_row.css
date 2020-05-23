@@ -35,6 +35,25 @@
     &__b-margin-until-md {
         margin-bottom: 1rem;
     }
+
+    @mixin atVerySmall {
+        &__col-vsm-6 {
+            float: left;
+            width: 50%;
+        }
+    }
+
+    @mixin atSmall {
+        &__col-sm-3 {
+            float: left;
+            width: 25%;
+        }
+
+        &__col-sm-6 {
+            float: left;
+            width: 50%;
+        }
+    }
     
     @mixin atMedium {
 
@@ -69,6 +88,11 @@
 
         &__col-md-8--smaller {
             width: 63%;
+        }
+
+        &__col-md-12 {
+            float: left;
+            width: 100%;/* Each of the 12 columns is 8.333% */
         }
     }
 

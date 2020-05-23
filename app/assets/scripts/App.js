@@ -1,5 +1,6 @@
 import '../styles/styles.css' // This adds in our CSS //
 import 'lazysizes' // Lazy loading packaging import after 'npm install lazysizes'//
+import ImageModal from './modules/ImageModal'
 import MobileMenu from './modules/MobileMenu'
 import RevealOnScroll from './modules/RevealOnScroll'
 import StickyHeader from './modules/StickyHeader'
