@@ -36,6 +36,18 @@
         margin-bottom: 1rem;
     }
 
+    &__b-margin-small {
+        margin-bottom: 2.5rem;
+    }
+
+    &__b-margin-med {
+        margin-bottom: 5rem;
+    }
+
+    &__b-margin-large {
+        margin-bottom: 7.5rem;
+    }
+
     @mixin atVerySmall {
         &__col-vsm-6 {
             float: left;

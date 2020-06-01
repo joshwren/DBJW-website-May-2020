@@ -1,0 +1,91 @@
+/* Style the Image Used to Trigger the Modal */
+.worksImg {
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+        opacity: 0.5;}
+  }
+  
+  /* The Modal (background) */
+  .image-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    padding-top: 20px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(211,211,211); /* Fallback color */
+    background-color: rgba(211,211,211,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-image {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    outline: none !important;
+      /* 100% Image Width on Smaller Screens */
+      
+  }
+  
+   @mixin atSmall{
+    .modal-image {
+    width: 100%;
+    }
+
+    @mixin atVerySmall{
+        .modal-image {
+        width: 100%;
+        }
+   }
+}
+  /* Add Animation - Zoom in the Modal */
+  .modal-image, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform: scale(1)}
+  }
+  
+  /* The Close Button */
+  .modal-close {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    transition: 0.3s;
+    font-size: 2rem;
+    color: $mainBlue;
+    transform: scaleX(1.2);
+    transform-origin: 100% 0;
+    cursor: pointer;
+  }
+  
+  .modal-close:hover,
+  .modal-close:focus {
+    color: $mainOrange;
+    text-decoration: none;
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    color: $mainBlue;
+    transform: scaleX(1.2);
+    transform-origin: 100% 0;
+    cursor: pointer;
+
+    &:hover {
+        color: $mainOrange;
+    }
+}
+  
