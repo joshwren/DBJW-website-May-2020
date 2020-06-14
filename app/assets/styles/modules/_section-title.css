@@ -50,5 +50,23 @@
             margin-bottom: 0;
             display: inline-block;
         }
+
+        &__qualifications {
+            position: relative;
+            top: 20px;
+            margin-right: .5rem; 
+            margin-left: 0;
+            margin-bottom: 0;
+            display: inline-block;
+        }
+
+        &__design-works {
+            position: relative;
+            top: 30px;
+            margin-right: .5rem; 
+            margin-left: 0;
+            margin-bottom: 0;
+            display: inline-block;
+        }
     }
 }
