@@ -19,6 +19,10 @@
         color: $mainBlue;
     }
 
+    &--orange {
+        color: $mainOrange;
+    }
+
     &--white {
         color: #fff
     }
