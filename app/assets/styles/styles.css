@@ -8,6 +8,7 @@
 
 /* IMPORTED MODULES styles */
 @import "modules/_btn";
+@import "modules/_contact-form";
 @import "modules/_skills-item";
 @import "modules/_feature-item";
 @import "modules/_headline";

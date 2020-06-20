@@ -10,6 +10,7 @@
   
   /* The Modal (background) */
   .image-modal {
+    position: relative;
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 10; /* Sit on top */
@@ -25,9 +26,14 @@
   
   /* Modal Content (Image) */
   .modal-image {
-    margin: auto;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
     display: block;
-    width: 80% !important;
+    width: 85% !important;
     max-width: 700px !important;
     outline: none !important;
       /* 100% Image Width on Smaller Screens */

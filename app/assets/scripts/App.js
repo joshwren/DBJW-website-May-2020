@@ -5,6 +5,7 @@ import LogoModals from './modules/LogoModals'
 import BusinessModals from './modules/BusinessModals'
 import RevealOnScroll from './modules/RevealOnScroll'
 import StickyHeader from './modules/StickyHeader'
+import ContactForm from './modules/ContactForm'
 
 // Create an Object for our imported js //
 let stickyHeader = new StickyHeader()

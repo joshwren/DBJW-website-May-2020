@@ -36,7 +36,51 @@ class Modal {
         <div class="wrapper wrapper--narrow">
           <p class="modal__description">We will have an online order system in place soon. Until then, connect with us on any of the platforms below!</p>
         </div>
+
+        <section class="contact-wrap">
+          <form action="" class="contact-form">
+            <div class="row">
+              <div class="row__col-md-6">
+                <div class="input-block">
+                  <label for="">First Name</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="row__col-md-6">
+                <div class="input-block">
+                  <label for="">Last Name</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+            </div>
+
+            <div class="row row__b-margin-med">
+              <div class="row__col-md-12">
+                <div class="input-block">
+                  <label for="">Email</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="row__col-md-12">
+                <div class="input-block">
+                  <label for="">Message Subject</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="row__col-md-12">
+                <div class="input-block textarea">
+                  <label for="">Drop your message here</label>
+                  <textarea rows="3" type="text" class="form-control"></textarea>
+                </div>
+              </div>
+              <div class="row__col-md-12">
+                <button class="square-button">Send</button>
+              </div>
+            </div>
+          </form>
+        </section>
   
+        <h2 class="section-title section-title--blue section-title--less-margin"><img src="assets/images/icons/mail.svg" class="section-title__icon"> Connect <strong>with me</strong></h2>
         <div class="social-icons">
           <a href="#" class="social-icons__icon"><img src="assets/images/icons/facebook.svg" alt="Facebook"></a>
           <a href="#" class="social-icons__icon"><img src="assets/images/icons/twitter.svg" alt="Twitter"></a>
@@ -49,5 +93,6 @@ class Modal {
       `)
     }
   }
+
   
   export default Modal
