@@ -9,6 +9,10 @@
         margin: 0 5px 5px 5px;
         position: relative;
 
+        &:hover {
+            background-color: $mainBlue;
+        }
+
         @mixin atSmall {
             width: 72px;
         }

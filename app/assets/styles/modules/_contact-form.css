@@ -5,6 +5,11 @@ $high: #333;
 
 $BP: 35em;
 
+.contact-wrapper {
+    background-color: #fff;
+    padding: 2rem !important;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
