@@ -53,7 +53,47 @@
       </div>
     </div>
   </header>
+  <!-- CONTACT FORM START -->
+  <input type="checkbox" name="showForm" id="showForm" class="showForm">
+    <div class="form">
+      <h2 class="section-title section-title--blue section-title--med-margin"><img src="assets/images/icons/mail.svg" class="section-title__icon"> Get in <strong>Touch</strong></h2>
+      
+      <div class="wrapper">
+        <form>
+          <div class="row row--gutters generic-content-container">
+            <div class="row__col-md-6">
+              <input type="text" name="name" placeholder="Your name" required>
+              <input type="email" name="email" placeholder="Your email" required>
+              <input type="tel" name="tel" placeholder="Your telephone number" required>
+            </div>
+            <div class="row__col-md-6">
+              <textarea name="comment" placeholder="Your comment" required></textarea>
+            </div>
+          </div>
 
+          <div class="row row--gutters generic-content-container">
+            <div class="row__col-md-6">
+              <label for="showForm" class="btn closeFormLabel">Cancel</label>
+            </div>
+            <div class="row__col-md-6">
+              <button type="submit" class="btn sendForm">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  <label for="showForm" onclick="showFormClose()" class="showFormLabel"><svg class="showFormLabel__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    width="64px" height="48px" fill="#000" viewBox="0 0 64 48" enable-background="#000" xml:space="preserve">
+ <title>mail</title>
+ <path d="M0,0v8l32,16L64,8V0H0z M0,16v32h64V16L32,32L0,16z"/>
+ </svg></label>
+ <div id="myDIV">
+  <label for="showForm" id="formClose">X</label>
+</div>
+  <!-- CONTACT FORM END -->
+  <a href="#" onclick="toggle_visibility('foo');">Click here to toggle visibility of element #foo</a>
+<div id="foo">This is foo</div>
+  
   <div class="large-hero" id="large-hero" data-matching-link="#large-hero-link">
     <div class="large-hero__transperancy"></div>
     <picture>
