@@ -82,14 +82,14 @@
         </form>
       </div>
     </div>
-  <label for="showForm" class="showFormLabel"><svg class="showFormLabel__icon" id="toggleClose" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  <label for="showForm" class="showFormLabel" id="toggleClose"><svg class="showFormLabel__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     width="64px" height="48px" fill="#000" viewBox="0 0 64 48" enable-background="#000" xml:space="preserve">
  <title>mail</title>
  <path d="M0,0v8l32,16L64,8V0H0z M0,16v32h64V16L32,32L0,16z"/>
  </svg></label>
 
- <div id="contactClose">
-   <label id="#formClose">X</label>
+ <div id="contactClose" class="contactClose">
+   <label for="showForm" id="formClose">X</label>
   </div>
   
 
@@ -141,6 +141,12 @@ var content = document.getElementById("contactClose");
 
 toggle.addEventListener("click", function(){
 content.classList.toggle("appear");
+}, false);
+
+var toggle2  = document.getElementById("formClose");
+
+toggle2.addEventListener("click", function(){
+  content.classList.toggle("disappear");
 }, false);
 </script>
 

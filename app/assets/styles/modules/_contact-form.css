@@ -194,7 +194,7 @@ input.showForm {
           transition: 0.6s;
   -webkit-transition: 0.6s;
   position: fixed;
-  bottom: 2rem;
+  bottom: 4rem;
   right: 2rem;
   z-index: 2;
 
@@ -202,5 +202,9 @@ input.showForm {
 #contactClose.appear{
   visibility: visible;
   opacity: 1;
+}
 
+#contactClose.disappear{
+  visibility: hidden !important;
+  opacity: 0 !important;
 }
