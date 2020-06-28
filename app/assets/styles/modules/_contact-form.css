@@ -177,15 +177,30 @@ input.showForm {
 }
 
 #formClose {
-  position: fixed;
+  display: block;
   cursor: pointer;
-  bottom: 2rem;
-  right: 2rem;
   width: 4rem;
   height: 4rem;
   line-height: 3rem;
   background-color: red;
   border-radius: 100%;
-  z-index: 1;
   text-align: center;
+}
+
+#contactClose{
+  /* DON'T USE DISPLAY NONE/BLOCK! Instead: */
+  visibility: hidden;
+  opacity: 0;
+          transition: 0.6s;
+  -webkit-transition: 0.6s;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 2;
+
+}
+#contactClose.appear{
+  visibility: visible;
+  opacity: 1;
+
 }
