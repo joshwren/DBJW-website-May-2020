@@ -1,11 +1,11 @@
 import '../styles/styles.css' // This adds in our CSS //
 import 'lazysizes' // Lazy loading packaging import after 'npm install lazysizes'//
 import MobileMenu from './modules/MobileMenu'
+import ContactForm from './modules/ContactForm'
 import LogoModals from './modules/LogoModals'
 import BusinessModals from './modules/BusinessModals'
 import RevealOnScroll from './modules/RevealOnScroll'
 import StickyHeader from './modules/StickyHeader'
-import ContactForm from './modules/ContactForm'
 
 // Create an Object for our imported js //
 let stickyHeader = new StickyHeader()

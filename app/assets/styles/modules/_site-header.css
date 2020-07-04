@@ -38,12 +38,9 @@
         }
 
         @mixin atVerySmall{
-            transform: translateX(-50%) scale(.6);
+            transform: translateX(-50%) scale(.8);
         }
 
-        @mixin atSmall{
-            transform: translateX(-50%) scale(.6);
-        }
     
         @mixin atMedium {
         transform-origin: -22% 0%;
