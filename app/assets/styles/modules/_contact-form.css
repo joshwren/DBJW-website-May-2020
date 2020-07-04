@@ -5,7 +5,6 @@ $high: #333;
 
 $BP: 35em;
 
-
 .form {
   position: fixed;
   width: 0;
@@ -145,8 +144,8 @@ input.showForm {
   display: block;
   bottom: 2rem;
   right: 2rem;
-  width: 4rem;
-  height: 4rem;
+  width: 4.5rem;
+  height: 4.5rem;
   line-height: 3rem;
   background-color: $mainOrange;
   border-radius: 100%;
@@ -154,27 +153,22 @@ input.showForm {
   z-index: 1;
   transition: background-color .5s ease, border-color .5s ease, transform .5s ease;
   text-align: center;
-  box
+  box-shadow: 3px 3px 10px rgba(0,0,0,.3);
 
     &:hover,
     &:focus {
       background-color: $mainBlue;
       transform: scale(1.1) !important;
     }
-  
-  @media (max-width: $BP) {
-    width: 90%;
-    left: 5%;
-  }
 
   &__icon {
     width: 2.25rem;
     height: auto;
-    margin-top: 1.1rem;
+    margin-top: 1.3rem;
     fill: #fff;
   }
 }
-
+/*
 #showFormLabel--red {
   background-color: red !important;
 }
@@ -196,4 +190,4 @@ input.showForm {
 
 #contactClose {
   display: none;
-}
+}*/

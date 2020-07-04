@@ -89,10 +89,11 @@
     <path d="M0,0v8l32,16L64,8V0H0z M0,16v32h64V16L32,32L0,16z"/>
     </svg>
   </label>
-
+<!--
  <div id="contactClose" class="contactClose">
    <label for="showForm" id="formClose">X</label>
   </div> 
+-->
   
   <!-- CONTACT FORM END -->
   <div class="large-hero" id="large-hero" data-matching-link="#large-hero-link">
@@ -124,7 +125,7 @@
         <hr>
       </div>
       <div class="large-hero__btn-container">
-        <a href="#" class="btn open-modal">Get in Touch</a>
+        <a href="#" class="btn open-modal">Connect With Me</a>
       </div>
     </div>
   </div>
@@ -517,41 +518,22 @@
   <!-- WORKS SECTION END -->
   <footer class="site-footer">
     <div class="wrapper">
-      <p><span class="site-footer__text">Copyright &copy; 2019 Clear View Escapes. All rights reserved.</span> <a href="#large-hero" id="large-hero-link" class="btn btn--orange open-modal">Get in Touch</a></p>
+      <div class="row">
+        <div class="row__col-md-6 site-footer__left">
+          <a href="#large-hero" id="large-hero-link" class="btn btn--orange open-modal">
+            <svg class="btn__icon--connect" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            fill="#fff" vertical-align="middle" viewBox="0 0 64 48" enable-background="#000" xml:space="preserve">
+            <title>mail</title>
+            <path d="M0,0v8l32,16L64,8V0H0z M0,16v32h64V16L32,32L0,16z"/>
+            </svg> Connect With Me
+          </a>
+        </div>
+
+        <div class="row__col-md-6 site-footer__right">
+          <p><span class="site-footer__text">Copyright &copy; 2019 Clear View Escapes. All rights reserved.</span></p>
+        </div>
+      </div>
     </div>
   </footer>
 
-  <script>
-
-let dogPic = document.querySelector("#contactClose")
-let button = document.querySelector(".showFormLabel")
-
-button.addEventListener("click", () => {
-  
-  showDog = !showDog
-  if (showDog === true) {
-    dogPic.style.display = "block"
-  } else {
-    dogPic.style.display = "none"
-  }
-
-  button.innerText = buttonStates[button.innerText]
-  
-})
-
-let showDog = false
-
-/* var toggle  = document.getElementById("toggleClose");
-  var content = document.getElementById("contactClose");
-  
-  toggle.addEventListener("click", function(){
-  content.classList.toggle("appear");
-  }, false);
-  
-  var toggle2  = document.getElementById("formClose");
-  
-  toggle2.addEventListener("click", function(){
-    content.classList.toggle("disappear");
-  }, false); */
-  </script> 
 </html>

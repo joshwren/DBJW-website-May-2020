@@ -9,6 +9,10 @@
     &:hover {
         background-color: $mainOrange;
         color: $mainBlue;
+
+        svg {
+            fill: red;
+          }
     }
 
     &--orange {
@@ -27,4 +31,19 @@
             font-size: 1.25rem;
         }
     }
+
+    &__icon {
+
+        &--connect {
+            width: 30px;
+            display: inline;
+            margin-right: 5px;
+            vertical-align: bottom;
+
+            
+              
+
+        }
+    }
+    
 }
