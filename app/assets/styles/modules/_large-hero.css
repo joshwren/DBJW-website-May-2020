@@ -1,7 +1,7 @@
 .large-hero {
     border-bottom: 10px solid $mainBlue;
     position: relative;
-    min-height: 450px;
+    min-height: 600px;
     overflow: hidden;
 
     @mixin atSmall {
@@ -53,7 +53,13 @@
         @mixin atSmall {
             top: 50%;
             transform: translateY(-50%);
-            padding: 160px 0 40px 0;
+            padding: 250px 0 40px 0;
+        }
+
+        @mixin atMedium {
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 170px 0 40px 0;
         }
     }
 
@@ -84,7 +90,7 @@
     }
 
     hr {
-        width: 275px;
+        width: 300px;
         border-top: 1.5px solid #fff;
             animation-name: moveInCenter;
             animation-delay: 1s;

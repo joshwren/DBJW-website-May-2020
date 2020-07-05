@@ -6,27 +6,31 @@
     &__text {
         font-weight: 200;
         line-height: normal;
-        margin-left: auto;
         padding: 0;
 
         @mixin atMedium {
-            float: right ;
-            margin-left: auto;
+            float: right;
         }
     }
 
     &__left {
-        text-align: center;
-        align-items: center;
+        justify-content: center;
+        flex-direction: column;
 
         @mixin atMedium {
-            text-align: left;
+            justify-content: left;
+            flex-direction: row;
         }
     }
 
     &__right {
         display: flex;
         align-items: center;
-        text-align: right;
+        justify-content: center;
+
+        @mixin atMedium {
+            justify-content: flex-end;
+        }
+
     }
 }

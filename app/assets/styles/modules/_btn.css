@@ -1,4 +1,5 @@
 .btn {
+    width: 230px;
     height: 50px;
     background-color: $mainBlue;
     color: #fff;
@@ -13,6 +14,25 @@
       line-height: .75rem;
     }
 
+    &--blue {
+        background-color: $mainBlue;
+
+        svg {
+            fill: #fff;
+            stroke: #fff;
+        }
+        
+        &:hover {
+            background-color: $mainOrange;
+            color: #fff;
+
+            svg {
+                fill: #fff;
+                stroke: #fff;
+            }
+        }
+    }
+
     &--orange {
         background-color: $mainOrange;
         
@@ -25,12 +45,11 @@
     &--clear {
         background-color: transparent;
         border: solid 1.5px #fff;
-        width: 230px;
 
         svg {
             fill: #fff;
             stroke: #fff;
-          }
+        }
         
         &:hover {
             background-color: #fff;
@@ -71,10 +90,10 @@
     &__margin {
 
         &--md {
-            margin: 5px 20px 5px 0;
+            margin: 0 0 15px 0;
 
             @mixin atMedium {
-                margin: 5px 20px 5px 0;
+                margin: 0 25px 0 0;
             }
         }
     }

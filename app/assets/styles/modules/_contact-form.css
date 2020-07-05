@@ -142,8 +142,8 @@ input.showForm {
   position: fixed;
   cursor: pointer;
   display: block;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 1.5rem;
+  right: 1.5rem;
   width: 4.5rem;
   height: 4.5rem;
   line-height: 3rem;
@@ -183,8 +183,8 @@ input.showForm {
   border-radius: 100%;
   text-align: center;
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 1.5rem;
+  right: 1.5rem;
   z-index: 2;
 }
 

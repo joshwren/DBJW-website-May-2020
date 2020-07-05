@@ -39,6 +39,7 @@
 
         @mixin atVerySmall{
             transform: translateX(-50%) scale(.8);
+            top: 0;
         }
 
     
