@@ -1,18 +1,16 @@
 .btn {
+    height: 50px;
     background-color: $mainBlue;
     color: #fff;
     text-decoration: none;
-    padding: .75rem 1.2rem;
-    display: inline-block;
     cursor: pointer;
 
-    &:hover {
-        background-color: $mainOrange;
-        color: $mainBlue;
+    display: inline-flex;
+    align-self: center;
+    justify-content: center;
 
-        svg {
-            fill: red;
-          }
+    p {
+      line-height: .75rem;
     }
 
     &--orange {
@@ -21,6 +19,27 @@
         &:hover {
             background-color: #fff;
             color: $mainOrange;
+        }
+    }
+
+    &--clear {
+        background-color: transparent;
+        border: solid 1.5px #fff;
+        width: 230px;
+
+        svg {
+            fill: #fff;
+            stroke: #fff;
+          }
+        
+        &:hover {
+            background-color: #fff;
+            color: $mainBlue;
+
+            svg {
+                fill: $mainBlue;
+                stroke: $mainBlue;
+              }
         }
     }
 
@@ -33,17 +52,30 @@
     }
 
     &__icon {
-
+        
         &--connect {
-            width: 30px;
+            width: 35px;
             display: inline;
-            margin-right: 5px;
+            margin-right: 8px;
             vertical-align: bottom;
+        }
 
-            
-              
-
+        &--resume {
+            width: 35px;
+            display: inline;
+            margin-right: 8px;
+            vertical-align: bottom;
         }
     }
-    
+
+    &__margin {
+
+        &--md {
+            margin: 5px 20px 5px 0;
+
+            @mixin atMedium {
+                margin: 5px 20px 5px 0;
+            }
+        }
+    }
 }
