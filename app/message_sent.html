@@ -19,16 +19,38 @@
 <body>
   <!-- CONTENT START HERE -->
   <div class="message-sent">
-    <div class="message-sent__header">
-      <img src="assets/images/logos/DBJW_logo.svg">
+    <div class="message-sent__large-hero">
+      <img src="assets/images/icons/message-sent.svg" class="message-sent__icon">
+
+      <picture>
+        <source srcset="
+        assets/images/celebration_banner.jpg 1920w, 
+        assets/images/celebration_banner.jpg 3840w" 
+        media="(min-width: 1380px)"> <!-- Large screen sizes -->
+        <source srcset="
+        assets/images/celebration_banner.jpg 1380w, 
+        assets/images/celebration_banner.jpg 2760w" 
+        media="(min-width: 990px)"> <!-- Medium screen sizes -->
+        <source srcset="
+        assets/images/celebration_banner.jpg 990w, 
+        assets/images/celebration_banner.jpg 1980w" 
+        media="(min-width: 640px)"> <!-- Small screen sizes -->
+        <img srcset="
+        assets/images/celebration_banner.jpg 640w, 
+        assets/images/celebration_banner.jpg 1280w" 
+        alt="" class="message-sent__banner-image"> <!-- Smallest screen sizes -->
+      </picture>
+      <a href="index.html">
+        <div class="message-sent__close">X</div>
+      </a>
     </div>
-    <div class="message-sent__inner"></div>
-      <img src="assets/images/icons/mail.svg" class="section-title__icon">
-      <h2 class="message-sent-title"><strong>Success!</strong> Message Sent</h2>
+    <div class="message-sent__content">
+      <h2 class="message-sent-title"><strong>Success!</strong><br><span>Message Sent</span></h2>
+      
       <p>Your message has been successfully sent.</p>
       <hr>
       <p>Thank you for contacting me. I will be in touch with you very soon.</p>
-
+    </div>
   </div>
   
 
