@@ -59,15 +59,15 @@
       <h2 class="section-title section-title--blue section-title--med-margin"><img src="assets/images/icons/mail.svg" class="section-title__icon"> Get in <strong>Touch</strong></h2>
       
       <div class="wrapper">
-        <form>
+        <form action="message_sent.php" method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
           <div class="row row--gutters generic-content-container">
             <div class="row__col-md-6">
               <input type="text" name="name" placeholder="Your name" required>
               <input type="email" name="email" placeholder="Your email" required>
-              <input type="tel" name="tel" placeholder="Your telephone number" required>
+              <input type="tel" name="telephone" placeholder="Your telephone number" required>
             </div>
             <div class="row__col-md-6">
-              <textarea name="comment" placeholder="Your comment" required></textarea>
+              <textarea name="comments" placeholder="Your comment" required></textarea>
             </div>
           </div>
 
@@ -125,7 +125,7 @@
         <hr>
       </div>
       <div class="large-hero__btn-container">
-        <a href="#large-hero" id="large-hero-link" class="btn btn--blue open-modal">
+        <a href="#large-hero" id="large-hero-link" class="btn btn__icon--p btn--blue open-modal">
           <svg class="btn__icon--connect" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           viewBox="3.981 -0.033 43.628 41.674" enable-background="new 3.981 -0.033 43.628 41.674"
           xml:space="preserve">
@@ -144,7 +144,7 @@
             </g>
             </svg>
             <p>Connect With Me</p> 
-      </a>
+        </a>
       </div>
     </div>
   </div>

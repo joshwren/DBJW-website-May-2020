@@ -21,6 +21,10 @@
             justify-content: left;
             flex-direction: row;
         }
+
+        .btn p {
+            line-height: .6rem;
+          }
     }
 
     &__right {
@@ -31,6 +35,5 @@
         @mixin atMedium {
             justify-content: flex-end;
         }
-
     }
 }

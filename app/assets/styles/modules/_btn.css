@@ -8,9 +8,10 @@
 
     display: inline-flex;
     align-self: center;
+    align-items: center;
     justify-content: center;
 
-    p {
+    &__icon--p {
       line-height: .75rem;
     }
 

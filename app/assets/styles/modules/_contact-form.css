@@ -1,8 +1,3 @@
-
-$lightBg: #f2f2f2;
-$light: #999;
-$high: #333;
-
 $BP: 35em;
 
 .form {
@@ -120,21 +115,22 @@ input.showForm {
   display: none;
   
   &:checked + .form {
-    width: 90%;
-    height: 50%;
+    width: 95%;
+    height: 75%;
     box-shadow: 4px 5px 5px 5px darken($lightBg, 30%);
     overflow: auto;
     transition: width .5s ease, height .5s ease .5s;
     
     @mixin atSmall {
+      width: 90%;
+      height: 70%;
+    }
+
+    @mixin atMedium {
       width: 80%;
       height: 50%;
     }
 
-    @mixin atMedium {
-      width: 70%;
-      height: 50%;
-    }
   }
 }
 

@@ -24,7 +24,7 @@
         left: 50%;
         transition: transform .3s ease-out;
         transform: translateX(-50%) scale(.8);
-        padding: 10px;
+        padding: 30px;
         width: auto;
 
         img {
