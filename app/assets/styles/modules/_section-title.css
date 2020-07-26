@@ -47,6 +47,10 @@
             fill: #fff !important;
         }
 
+        &__blue {
+            fill: $mainBlue !important;
+        }
+
         @mixin atSmall {
             position: relative;
             top: 8px;
