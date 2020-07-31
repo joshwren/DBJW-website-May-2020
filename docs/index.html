@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+
+  <title>DBJW Webfolio</title>
+
+  <!-- Tab icon image link -->
+  <link rel="shortcut icon" type="image/png" href="assets/images/logos/DBJW_logo.png">
+
+  <meta name="keywords" content="graphic design, website design, website development, great graphic design">
+  <meta name="description" content="Designs by Josh Wren. Highly Experienced Graphic and Web Designer. Highly Experienced Web Developer.">
+<link href="styles.ffcec5bdae6ea1c1ca1f.css" rel="stylesheet"></head>
+<body>
+  <header class="site-header">
+    <div class="wrapper">
+      <div class="site-header__logo">
+        <img src="assets/images/logos/DBJW_logo.svg">
+      </div>
+      
+      <div class="site-header__menu-icon">
+        <div class="site-header__menu-icon__middle"></div>
+      </div>
+      
+      <div class="site-header__menu-content">
+        <nav class="primary-nav">
+          <ul>
+            <li><a href="#our-beginning" id="our-beginning-link">About</a></li>
+            <li><a href="#skills" id="skills-link">Skills</a></li>
+            <li><a href="#qualifications" id="qualifications-link">Resume</a>
+              <ul>
+                <li class="primary-nav--sub-list"><a href="#qualifications" id="qualifications-link">Qualifications</a>
+                </li>
+                <li class="primary-nav--sub-list"><a href="#work-history" id="work-history-link">Work History</a>
+                </li>
+                <li class="primary-nav--sub-list"><a href="assets/documents/Joshua_Wren's_CV.pdf" target="blank">CV</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#testimonials" id="testimonials-link">Portfolio</a>
+              <ul>
+                <li class="primary-nav--sub-list"><a href="#logos" id="logos-link">Logos</a>
+                </li>
+                <li class="primary-nav--sub-list"><a href="#print" id="print-link">Print</a>
+                </li>
+                <li class="primary-nav--sub-list"><a href="#digital" id="digital-link">Digital</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- CONTACT FORM START -->
+  <input type="checkbox" name="showForm" id="showForm" class="showForm">
+    <div class="form">
+      <h2 class="section-title section-title--blue section-title--med-margin"><img src="assets/images/icons/mail.svg" class="section-title__icon"> Get in <strong>Touch</strong></h2>
+      
+      <div class="wrapper">
+        <form action="message_sent.php" method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
+          <div class="row row--gutters generic-content-container">
+            <div class="row__col-md-6">
+              <input type="text" name="name" placeholder="Your name" required>
+              <input type="email" name="email" placeholder="Your email" required>
+              <input type="tel" name="telephone" placeholder="Your telephone number" required>
+            </div>
+            <div class="row__col-md-6">
+              <textarea name="comments" placeholder="Your comment" required></textarea>
+            </div>
+          </div>
+
+          <div class="row row--gutters generic-content-container">
+            <div class="row__col-md-6">
+              <label for="showForm" class="btn closeFormLabel">Cancel</label>
+            </div>
+            <div class="row__col-md-6">
+              <button type="submit" class="btn sendForm">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  <label for="showForm" onclick="changeStyle()" class="showFormLabel" id="showFormLabel">
+    <svg class="showFormLabel__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    width="64px" height="48px" fill="#000" viewBox="0 0 64 48" enable-background="#000" xml:space="preserve">
+    <title>mail</title>
+    <path d="M0,0v8l32,16L64,8V0H0z M0,16v32h64V16L32,32L0,16z"/>
+    </svg>
+  </label>
+<!--
+ <div id="contactClose" class="contactClose">
+   <label for="showForm" id="formClose">X</label>
+  </div> 
+-->
+  
+  <!-- CONTACT FORM END -->
+  <div class="large-hero" id="large-hero" data-matching-link="#large-hero-link">
+    <div class="large-hero__transperancy"></div>
+    <picture>
+      <source srcset="
+      assets/images/carousel_images/Hand_sketching.jpg 1920w, 
+      assets/images/carousel_images/Hand_sketching.jpg 3840w" 
+      media="(min-width: 1380px)"> <!-- Large screen sizes -->
+      <source srcset="
+      assets/images/carousel_images/Hand_sketching.jpg 1380w, 
+      assets/images/carousel_images/Hand_sketching.jpg 2760w" 
+      media="(min-width: 990px)"> <!-- Medium screen sizes -->
+      <source srcset="
+      assets/images/carousel_images/Hand_sketching.jpg 990w, 
+      assets/images/carousel_images/Hand_sketching.jpg 1980w" 
+      media="(min-width: 640px)"> <!-- Small screen sizes -->
+      <img srcset="
+      assets/images/carousel_images/Hand_sketching.jpg 640w, 
+      assets/images/carousel_images/Hand_sketching.jpg 1280w" 
+      alt="" class="large-hero__image"> <!-- Smallest screen sizes -->
+    </picture>
+
+    <div class="large-hero__text-content">
+      <div class="wrapper">
+        <h1 class="large-hero__title">JOSH WREN</h1>
+        <hr>
+        <h2 class="large-hero__subtitle">DESIGNER // DEVELOPER</h2>
+        <hr>
+      </div>
+      <div class="large-hero__btn-container">
+        <a href="#large-hero" id="large-hero-link" class="btn btn__icon--p btn--blue open-modal">
+          <svg class="btn__icon--connect" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="3.981 -0.033 43.628 41.674" enable-background="new 3.981 -0.033 43.628 41.674"
+          xml:space="preserve">
+          <g>
+          <circle fill-rule="evenodd" clip-rule="evenodd" cx="26.097" cy="20.618" r="8.144"/>
+          <circle fill-rule="evenodd" clip-rule="evenodd" cx="43.256" cy="22.291" r="4.353"/>
+          <circle fill-rule="evenodd" clip-rule="evenodd" cx="35.863" cy="4.32" r="4.354"/>
+          <circle fill-rule="evenodd" clip-rule="evenodd" cx="14.367" cy="9.673" r="4.353"/>
+          <circle fill-rule="evenodd" clip-rule="evenodd" cx="8.334" cy="26.454" r="4.353"/>
+          <circle fill-rule="evenodd" clip-rule="evenodd" cx="29.958" cy="37.288" r="4.353"/>
+            <line fill="none" stroke-width="2.2337" stroke-miterlimit="10" x1="8.334" y1="26.454" x2="26.098" y2="20.618"/>
+            <line fill="none" stroke-width="2.2337" stroke-miterlimit="10" x1="14.367" y1="9.673" x2="26.098" y2="20.618"/>
+            <line fill="none" stroke-width="2.2337" stroke-miterlimit="10" x1="26.098" y1="20.618" x2="35.864" y2="4.32"/>
+            <line fill="none" stroke-width="2.2337" stroke-miterlimit="10" x1="43.256" y1="22.291" x2="26.098" y2="20.618"/>
+            <line fill="none" stroke-width="2.2337" stroke-miterlimit="10" x1="29.958" y1="37.288" x2="26.33" y2="20.708"/>
+            </g>
+            </svg>
+            <p>Connect With Me</p> 
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="our-beginning" class="page-section" data-matching-link="#our-beginning-link">
+    <div class="wrapper">
+      <h2 class="headline headline--centered headline--light headline--b-margin-small">WELCOME TO <strong>MY WEBFOLIO</strong></h2>
+      <h3 class="headline headline--centered headline--orange headline--small headline--narrow headline--b-margin-large">I am a highly skilled<br><strong>Graphic Designer and Web Developer</strong><br>living in Canberra, ACT Australia</h3>
+      <br>
+      <!-- ABOUT SECTION START -->
+      <div class="row row--gutters">
+        <div class="row__col-md-4 row__col-md-4--larger row__b-margin-until-md about-hero">
+          <picture>
+            <!-- Large screen imagery -->
+            <source sizes="404px" data-srcset="assets/images/profile-pic.jpg 404w, assets/images/profile-pic-hi-dpi.jpg 808w" media="(min-width: 1020px)">
+            <!-- Medium screen imagery -->
+            <source sizes="320px" data-srcset="assets/images/profile-pic-portrait.jpg 382w, assets/images/profile-pic-portrait-hi-dpi.jpg 764w" media="(min-width: 800px)">
+            <!-- Small screen imagery -->
+            <img class="lazyload" data-srcset="assets/images/profile-pic-landscape.jpg 800w, assets/images/profile-pic-landscape-hi-dpi.jpg 1600w" alt="Our founder, Jane Doe">
+          </picture>
+        </div>
+
+        <div class="row__col-md-8 row__col-md-8--smaller">
+          <div class="generic-content-container">
+            <p>Hi, my name is <strong>Joshua Wren</strong> and I am a highly motivated and courageous Graphic Designer, Signage/Wayfinding Designer and Web Developer, living in Canberra ACT. I am extremely interested in all parts of design, but particularly enjoy publication design, infographic design and web design/development in general.</p>
+            <p>I have a Bachelor Degree in Graphic Design & Multi-Media acquired through my studies through the University of Canberra (UC). Along with that I posses an Advanced Diploma in Graphic Design & Digital Media studied through Canberra Institute of Technology (CIT).</p>
+            <p>I am currently studying for a Bachelor Degree in Web Design and Production through the University of Canberra (UC) in order to develop my skills and experience within digital design and production.</p>
+            <p>I have been in the design industry for over ten years – three and a half years within signage design/production and eight plus years within print and digital design.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ABOUT SECTION END -->
+  <!-- SKILLS SECTION START -->
+  <div id="skills" class="page-section page-section--blue" data-matching-link="#skills-link">
+    <div class="wrapper">
+      <h2 class="section-title"><img class="section-title__icon" src="assets/images/icons/skills.svg"> My <strong>Skills</strong></h2>
+
+      <div class="row row--gutters-large generic-content-container">
+        <div class="row__col-md-6">
+          <div class="skills-item">
+            <img src="assets/images/icons/graphic-design.svg" class="skills-item__icon">
+            <h3 class="skills-item__title">Graphic Design Skills</h3>
+            <p>I am a highly creative and multitalented Graphic Designer with extensive experience in multimedia, marketing and print design. I also posses a vast set of skills within signage design and production with years of experience acquired within that field. I have a unique mix of creativity, time management, problem solving and technical skill proven by 10+ years of experience.</p>
+
+            <h4 class="skills-item__subtitle">Creativity</h4>
+            <div class="skills-item__percent-bar">
+              <div class="skills-item__percent-bar--inner" 
+              style="width: 85%; height: 100%;">
+                <p>85%</p>
+              </div>
+            </div>
+
+            <h4 class="skills-item__subtitle">Styling</h4>
+            <div class="skills-item__percent-bar">
+              <div class="skills-item__percent-bar--inner" 
+              style="width: 80%; height: 100%;">
+                <p>80%</p>
+              </div>
+            </div>
+
+            <h4 class="skills-item__subtitle">Drawing</h4>
+            <div class="skills-item__percent-bar">
+              <div class="skills-item__percent-bar--inner" 
+              style="width: 65%; height: 100%;">
+                <p>65%</p>
+              </div>
+            </div>
+
+            <h4 class="skills-item__subtitle">Adobe Creative Suite Skills</h4>
+            <div class="skills-item__percent-bar">
+              <div class="skills-item__percent-bar--inner" 
+              style="width: 85%; height: 100%;">
+                <p>85%</p>
+              </div>
+            </div>
+
+            <h4 class="skills-item__subtitle">Microsoft Office Skills</h4>
+            <div class="skills-item__percent-bar">
+              <div class="skills-item__percent-bar--inner" 
+              style="width: 75%; height: 100%;">
+                <p>75%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row__col-md-6">
+          <div class="skills-item">
+            <img src="assets/images/icons/web-dev.svg" class="skills-item__icon">
+            <h3 class="skills-item__title">Web Development Skills</h3>
+            <p>I am a highly experienced Web Developer specialising in front end Web Development. I am experienced with all stages of the development cycle, building, maintaining and optimising the performance of user-centric, high-impact dynamic websites. I am well versed in numerous programming languages as shown below and specialise in Wordpress based Content Management System (CMS) websites.</p>
+
+            <h4 class="skills-item__subtitle">HTML 5</h4>
+            <div class="skills-item__percent-bar">
+              <div class="skills-item__percent-bar--inner" 
+              style="width: 75%; height: 100%;">
+                <p>75%</p>
+              </div>
+            </div>
+
+            <h4 class="skills-item__subtitle">CSS 3/SASS</h4>
+            <div class="skills-item__percent-bar">
+              <div class="skills-item__percent-bar--inner" 
+              style="width: 70%; height: 100%;">
+                <p>70%</p>
+              </div>
+            </div>
+
+            <h4 class="skills-item__subtitle">JavaScript/Jquery</h4>
+            <div class="skills-item__percent-bar">
+              <div class="skills-item__percent-bar--inner" 
+              style="width: 55%; height: 100%;">
+                <p>55%</p>
+              </div>
+            </div>
+
+            <h4 class="skills-item__subtitle">PHP</h4>
+            <div class="skills-item__percent-bar">
+              <div class="skills-item__percent-bar--inner" 
+              style="width: 60%; height: 100%;">
+                <p>60%</p>
+              </div>
+            </div>
+
+            <h4 class="skills-item__subtitle">Content Management System's (CMS)</h4>
+            <div class="skills-item__percent-bar">
+              <div class="skills-item__percent-bar--inner" 
+              style="width: 70%; height: 100%;">
+                <p>70%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- SKILLS SECTION END -->
+  <!-- QUALIFICATIONS SECTION START -->
+  <div id="qualifications" class="page-section page-section--no-b-padding-until-lg page-section--qualifications" data-matching-link="#qualifications-link">
+    <div class="page-section--qualifications--overlay">&nbsp;
+      <div class="wrapper wrapper--no-padding-until-lg">
+        
+        <h2 class="section-title section-title--blue section-title--qualifications"><img class="section-title__icon__qualifications" src="assets/images/icons/qualifications.svg"> My <strong>Qualifications</strong></h2>
+
+        <div class="row row--gutters row--equal-height-at-lg row--gutters-small row--t-padding generic-content-container">
+          <div class="row__col-lg-4">
+            <div class="qualifications">
+              <div class="qualifications__photo">
+                <img class="lazyload"
+                sizes="160px"
+                data-srcset="assets/images/Web-development.jpg 160w, 
+                assets/images/Web-development-hi-dpi.jpg 320w"
+                alt="">
+              </div>
+              <h3 class="qualifications__title"><strong>Bachelor Degree</strong> of <br>Web Design and Production</h3>
+              <h4 class="qualifications__subtitle">Currently studying at: University of Canberra (ACT)</h4>
+              <p>This major provides specialist practical study in web design and production. Through integrated practical and theoretical study students will gain technical, conceptual and critical understanding of web design in a range of forms and cultural contexts.</p>
+              <h4 class="qualifications__subtitle__end">Dates: 2017 - Present</h4>
+            </div>
+            <div>
+              
+            </div>
+          </div>
+
+          <div class="row__col-lg-4">
+            <div class="qualifications">
+              <div class="qualifications__photo">
+                <img class="lazyload" 
+                sizes="160px"
+                data-srcset="assets/images/Graphic-Design.jpg 160w, 
+                assets/images/Graphic-Design-hi-dpi.jpg 320w"
+                alt="">
+              </div>
+              <h3 class="qualifications__title"><strong>Bachelor Degree</strong> of <br>Graphic Design</h3>
+              <h4 class="qualifications__subtitle">Achieved at: University of Canberra (ACT)</h4>
+              <p>This major provides specialist practical study in graphic design. Students will gain a thorough understanding of graphic design principles and techniques in a range of media, and an understanding of related professional and cultural practice and contexts.</p>
+              <h4 class="qualifications__subtitle__end">Date: 2011</h4>
+            </div>
+          </div>
+
+          <div class="row__col-lg-4">
+            <div class="qualifications qualifications--last">
+              <div class="qualifications__photo">
+                <img class="lazyload" 
+                sizes="160px"
+                data-srcset="assets/images/Digital-Media.jpg 160w, assets/images/Digital-Media-hi-dpi.jpg 320w">
+              </div>
+              <h3 class="qualifications__title"><strong>Advanced Diploma</strong> of <br>Digital Media</h3>
+              <h4 class="qualifications__subtitle">Achieved at: CIT Reid campus (ACT)</h4>
+              <p>This qualification provides you with the skills and knowledge to be competent in a wide range of general information and communications technology (ICT) technical functions and to achieve a degree of self-sufficiency as an advanced ICT user.</p>
+              <h4 class="qualifications__subtitle__end">Dates: 2008 - 2010</h4>
+            </div>
+          </div>
+        </div>
+        <div class="page-section--qualifications--link"><h2 class="section-link-blue section-link-blue--qualifications"><a href="#">Read more</a></h2></div> 
+      </div>
+    </div>
+  </div>
+  <!-- QUALIFICATIONS SECTION END -->
+  <!-- PLACES OF WORK SECTION START -->
+  <div id="work-history" class="page-section page-section--no-b-padding-until-lg page-section--orange" data-matching-link="#work-history-link">
+    <div class="wrapper wrapper--no-padding-until-lg">
+      
+      <h2 class="section-title section-title--white"><img class="section-title__icon section-title__icon__white" style="fill:#fff;" src="assets/images/icons/work-history.svg"> My recent <strong>Work History</strong></h2>
+
+      <div class="row row--gutters row--equal-height-at-lg row--gutters-small row--t-padding generic-content-container">
+        <div class="row__col-lg-4">
+          <div class="work-history">
+            <div class="work-history__photo">
+              <img class="lazyload"
+              sizes="160px"
+              data-srcset="assets/images/logos/logo-1.jpg 160w, 
+              assets/images/logos/logo-1-hi-dpi.jpg 320w"
+              alt="">
+            </div>
+            <h3 class="work-history__title">Royal Australian Mint</h3>
+            <h4 class="work-history__subtitle">Position: Senior Graphic Designer</h4>
+            <p>Fulfilling a wide range of graphic design based tasks and projects from small to large scale in order to facilitate the companies internal and profit driven graphic design requirements.</p><!-- A large emphasis on packaging design and specialty/high end printing. -->
+            <h4 class="work-history__subtitle__end">Dates: 2020 - Present</h4>
+          </div>
+        </div>
+
+        <div class="row__col-lg-4">
+          <div class="work-history">
+            <div class="work-history__photo">
+              <img class="lazyload" 
+              sizes="160px"
+              data-srcset="assets/images/logos/logo-2.jpg 160w, 
+              assets/images/logos/logo-2-hi-dpi.jpg 320w"
+              alt="">
+            </div>
+            <h3 class="work-history__title">Transit Graphics</h3>
+            <h4 class="work-history__subtitle">Position: Senior Graphic Designer</h4>
+            <p>Undertaking all forms of general graphic design, such as branding, booklet layouts, ads, brochures, flyers, infographics, wayfinding, marketing collateral and packaging design for multiple clients.</p>
+            <h4 class="work-history__subtitle__end">Dates: 2012 - 2020</h4>
+          </div>
+        </div>
+
+        <div class="row__col-lg-4">
+          <div class="work-history work-history--last">
+            <div class="work-history__photo">
+              <img class="lazyload" 
+              sizes="160px"
+              data-srcset="assets/images/logos/logo-3.jpg 160w, 
+              assets/images/logos/logo-3-hi-dpi.jpg 320w">
+            </div>
+            <h3 class="work-history__title">Canberra Rubber Stamps and Signs (CRSS)</h3>
+            <h4 class="work-history__subtitle">Position: Graphic Designer, Sign Producer & Installer</h4>
+            <p>Designed numerous print advertisements and general signage based artworks to be applied on all forms of products (promotional materials, vehicles, various metal based material and shop front/internal).</p>
+            <h4 class="work-history__subtitle__end">Dates: 2008 - 2011</h4>
+          </div>
+        </div>
+      </div>
+      <h2 class="section-link-white"><a href="#">Read more</a></h2>
+    </div>
+  </div>
+  <!-- PLACES OF WORK SECTION END -->
+  <!-- WORKS SECTION START -->
+  <div id="works" class="page-section page-section--works" data-matching-link="#works-link">
+    <div class="wrapper wrapper--no-padding-until-lg">
+
+      <h2 class="section-title section-title--blue"><img class="section-title__icon__design-works section-title__icon__white" style="fill:#fff;" src="assets/images/icons/design-works.svg"> My recent <strong>Design Works</strong></h2>
+      <!----- LOGO WORKS START ----->
+      <div class="row">
+        <div class="works">
+          <div class="row__col-md-6 works--2-col-assortment">
+            <!-- Works img1 -->
+            <img id="logoWorksImg01" class="worksImg" src="assets/images/folio/Logo Designs/JW_Logo_designs3.jpg" alt="Hair by Tiana logo">
+              <!-- Works img1 Modal-->
+              <div id="logosModal01" class="image-modal">
+                <div class="modal-close logosModalClose01">X</div>
+                <img class="modal-image" id="logosImg01">
+              </div>
+            <!-- Works img Title -->
+            <img src="assets/images/folio/folio_labels-01.jpg" alt="Logo works title">
+
+            <!-- Logo Works img2 -->
+            <img id="logoWorksImg02" class="worksImg" src="assets/images/folio/Logo Designs/JW_Logo_designs6.jpg" alt="Platinum Fitouts logo">
+              <!-- Logo Works img2 Modal-->
+              <div id="logosModal02" class="image-modal">
+                <div class="modal-close logosModalClose02">X</div>
+                <img class="modal-image" id="logosImg02">
+              </div>
+            <!-- Logo Works img3 -->
+            <img id="logoWorksImg03" class="worksImg" src="assets/images/folio/Logo Designs/JW_Logo_designs11.jpg" alt="Completely Beautiful logo">
+              <!-- Logo Works img3 Modal-->
+              <div id="logosModal03" class="image-modal">
+                  <div class="modal-close logosModalClose03">X</div>
+                  <img class="modal-image" id="logosImg03">
+              </div>
+          </div>
+          <div class="row__col-md-6 works--feature">
+            <!-- Logo Works img4 -->
+            <img id="logoWorksImg04" class="worksImg" src="assets/images/folio/Logo Designs/JW_Logo_designs4.jpg" alt="National Landscaping & Horticulture logo">
+              <!-- Logo Works img4 Modal-->
+              <div id="logosModal04" class="image-modal">
+                <div class="modal-close logosModalClose04">X</div>
+                <img class="modal-image" id="logosImg04">
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row__b-margin-med">
+          <div class="row__col-md-3 row__col-sm-6 row__col-vsm-6 works--1-col-assortment">
+            <!-- Logo Works img5 -->
+            <img id="logoWorksImg05" class="worksImg" src="assets/images/folio/Logo Designs/JW_Logo_designs12.jpg" alt="New Worx Construction logo">
+              <!-- Logo Works img5 Modal-->
+              <div id="logosModal05" class="image-modal">
+                <div class="modal-close logosModalClose05">X</div>
+                <img class="modal-image" id="logosImg05">
+              </div>
+          </div>
+          <div class="row__col-md-3 row__col-sm-6 row__col-vsm-6 works--1-col-assortment">
+            <!-- Logo Works img6 -->
+            <img id="logoWorksImg06" class="worksImg" src="assets/images/folio/Logo Designs/JW_Logo_designs16.jpg" alt="Fuse Electrical Group logo">
+              <!-- Logo Works img6 Modal-->
+              <div id="logosModal06" class="image-modal">
+                <div class="modal-close logosModalClose06">X</div>
+                <img class="modal-image" id="logosImg06">
+              </div>
+          </div>
+          <div class="row__col-md-3 row__col-sm-6 row__col-vsm-6 works--1-col-assortment">
+            <!-- Logo Works img7 -->
+            <img id="logoWorksImg07" class="worksImg" src="assets/images/folio/Logo Designs/JW_Logo_designs17.jpg" alt="Staffords Complete Concreting Solutions logo">
+              <!-- Logo Works img7 Modal-->
+              <div id="logosModal07" class="image-modal">
+                <div class="modal-close logosModalClose07">X</div>
+                <img class="modal-image" id="logosImg07">
+              </div>
+          </div>
+          <div class="row__col-md-3 row__col-sm-6 row__col-vsm-6 works--1-col-assortment">
+            <!-- Logo Works img8 -->
+            <img id="logoWorksImg08" class="worksImg" src="assets/images/folio/Logo Designs/JW_Logo_designs5.jpg" alt="Exstructus logo">
+              <!-- Logo Works img8 Modal-->
+              <div id="logosModal08" class="image-modal">
+                <div class="modal-close logosModalClose08">X</div>
+                <img class="modal-image" id="logosImg08">
+              </div>
+          </div>
+      </div>
+      <!----- LOGO WORKS END ----->
+
+      <!----- BUSINESS WORKS START ----->
+      <div class="row">
+        <div class="works">
+          <div class="row__col-md-6 works--feature">
+            <!-- Business Cards Works img4 -->
+            <img id="businessWorksImg04" class="worksImg" src="assets/images/folio/Print Designs/Business cards/JW_Business_card_designs.jpg" alt="Hair by Tiana business card">
+              <!-- Business Cards Works img4 Modal-->
+              <div id="businessModal04" class="image-modal">
+                <div class="modal-close businessModalClose04">X</div>
+                <img class="modal-image" id="businessImg04">
+              </div>
+          </div>
+
+          <div class="row__col-md-6 works--2-col-assortment">
+            <!-- Business Cards Works img1 -->
+            <img id="businessWorksImg01" class="worksImg" src="assets/images/folio/Print Designs/Business cards/JW_Business_card_designs2.jpg" alt="National Landscaping & Horticulture business card">
+              <!-- Business Cards Works img1 Modal-->
+              <div id="businessModal01" class="image-modal">
+                <div class="modal-close businessModalClose01">X</div>
+                <img class="modal-image" id="businessImg01">
+              </div>
+            <!-- Business Cards Works img2 -->
+            <img id="businessWorksImg02" class="worksImg" src="assets/images/folio/Print Designs/Business cards/JW_Business_card_designs7.jpg" alt="New Worx Construction business card">
+              <!-- Business Cards Works img2 Modal-->
+              <div id="businessModal02" class="image-modal">
+                <div class="modal-close businessModalClose02">X</div>
+                <img class="modal-image" id="businessImg02">
+              </div>
+            <!-- Works img Title -->
+            <img src="assets/images/folio/folio_labels-03.jpg" alt="Logo works title">
+            <!-- Business Cards Works img3 -->
+            <img id="businessWorksImg03" class="worksImg" src="assets/images/folio/Print Designs/Business cards/JW_Business_card_designs8.jpg" alt="Staffords Complete Concreting Solutions business card">
+              <!-- Business Cards Works img3 Modal-->
+              <div id="businessModal03" class="image-modal">
+                  <div class="modal-close businessModalClose03">X</div>
+                  <img class="modal-image" id="businessImg03">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----- BUSINESS WORKS END ----->
+  </div>
+  
+  <!-- WORKS SECTION END -->
+  <footer class="site-footer page-section">
+    <div class="wrapper wrapper--no-padding-until-lg">
+      <div class="row row--gutters row--equal-height-at-md">
+        <div class="row__col-md-6 site-footer__left">
+          <a href="#large-hero" id="large-hero-link" class="btn btn--clear btn__margin--md open-modal">
+            <svg class="btn__icon--resume" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-14.244 0.159 75.098 42.188" enable-background="new -14.244 0.159 75.098 42.188"
+	          xml:space="preserve">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.709,6.901c3.289-2.307,8.877-2.009,12.334-0.388
+              c3.502,1.641,5.999,4.634,7.188,8.255c4.958-1.723,10.43,0.527,13.111,2.915c2.534,2.256,4.865,6.379,4.469,11.849
+              c-0.493,6.767-5.687,11.878-12.53,12.53c-3.665,0.349-7.979,0.096-12.432,0.096c-4.076,0-8.318,0-12.433,0
+              c-8.896,0-17.691,0.483-24.863-0.096c-3.805-0.309-6.448-1.713-8.645-3.885c-1.947-1.927-3.771-4.989-4.079-8.354
+              c-0.386-4.208,0.813-7.487,2.428-9.809c2.111-3.038,5.339-5.249,10.198-5.731C-1.304,6.521,3.883,0.737,11.179,0.2
+              C17.335-0.253,21.211,3.124,23.709,6.901z"/>
+            </svg>
+            <p>Download Resume</p>
+          </a>
+
+          <a href="#large-hero" id="large-hero-link" class="btn btn--site-footer btn--clear open-modal">
+              <svg class="btn__icon--connect" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="3.981 -0.033 43.628 41.674" enable-background="new 3.981 -0.033 43.628 41.674"
+              xml:space="preserve">
+              <g>
+              <circle fill-rule="evenodd" clip-rule="evenodd" cx="26.097" cy="20.618" r="8.144"/>
+              <circle fill-rule="evenodd" clip-rule="evenodd" cx="43.256" cy="22.291" r="4.353"/>
+              <circle fill-rule="evenodd" clip-rule="evenodd" cx="35.863" cy="4.32" r="4.354"/>
+              <circle fill-rule="evenodd" clip-rule="evenodd" cx="14.367" cy="9.673" r="4.353"/>
+              <circle fill-rule="evenodd" clip-rule="evenodd" cx="8.334" cy="26.454" r="4.353"/>
+              <circle fill-rule="evenodd" clip-rule="evenodd" cx="29.958" cy="37.288" r="4.353"/>
+                <line fill="none" stroke-width="2.2337" stroke-miterlimit="10" x1="8.334" y1="26.454" x2="26.098" y2="20.618"/>
+                <line fill="none" stroke-width="2.2337" stroke-miterlimit="10" x1="14.367" y1="9.673" x2="26.098" y2="20.618"/>
+                <line fill="none" stroke-width="2.2337" stroke-miterlimit="10" x1="26.098" y1="20.618" x2="35.864" y2="4.32"/>
+                <line fill="none" stroke-width="2.2337" stroke-miterlimit="10" x1="43.256" y1="22.291" x2="26.098" y2="20.618"/>
+                <line fill="none" stroke-width="2.2337" stroke-miterlimit="10" x1="29.958" y1="37.288" x2="26.33" y2="20.708"/>
+                </g>
+                </svg>
+                <p>Connect With Me</p> 
+          </a>
+        </div>
+
+        <div class="row__col-md-6 site-footer__right">
+          <p><span class="site-footer__text">Copyright &copy; 2019 Clear View Escapes. All rights reserved.</span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</html>
+<script type="text/javascript" src="vendors~main.bc4e00d6cdefeb298605.js"></script><script type="text/javascript" src="main.ffcec5bdae6ea1c1ca1f.js"></script>

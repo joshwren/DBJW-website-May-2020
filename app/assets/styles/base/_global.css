@@ -24,3 +24,7 @@ img {
 a {
     color: $mainOrange;
 }
+
+svg {
+    overflow: visible;
+}
