@@ -93,6 +93,8 @@ $headers = 'From: '.$email_from."\r\n".
 @mail($email_to, $email_subject, $email_message, $headers);  
 ?>
 
+<!DOCTYPE html>
+<html>
 <!-- CONTENT START HERE -->
 
   <div class="message-sent">
@@ -145,10 +147,10 @@ $headers = 'From: '.$email_from."\r\n".
 <script>
 
 </script>
+</html>
 
 <?php
 }
 ?>
 
 </body>
-</html>

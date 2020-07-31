@@ -26,7 +26,7 @@
       <div class="site-header__menu-content">
         <nav class="primary-nav">
           <ul>
-            <li><a href="#our-beginning" id="our-beginning-link">About us</a></li>
+            <li><a href="#our-beginning" id="our-beginning-link">About</a></li>
             <li><a href="#skills" id="skills-link">Skills</a></li>
             <li><a href="#qualifications" id="qualifications-link">Resume</a>
               <ul>
@@ -59,15 +59,15 @@
       <h2 class="section-title section-title--blue section-title--med-margin"><img src="assets/images/icons/mail.svg" class="section-title__icon"> Get in <strong>Touch</strong></h2>
       
       <div class="wrapper">
-        <form action="message_sent.php" method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
+        <form name="contactform" method="post" action="message_sent.php">
           <div class="row row--gutters generic-content-container">
             <div class="row__col-md-6">
-              <input type="text" name="name" placeholder="Your name" required>
-              <input type="email" name="email" placeholder="Your email" required>
-              <input type="tel" name="telephone" placeholder="Your telephone number" required>
+              <input type="text" name="name" id="name" placeholder="Your name" required>
+              <input type="email" name="email" id="email" placeholder="Your email" required>
+              <input type="tel" name="telephone" id="number" placeholder="Your telephone number" required>
             </div>
             <div class="row__col-md-6">
-              <textarea name="comments" placeholder="Your comment" required></textarea>
+              <textarea name="comments" id="comments" placeholder="Your comment" required></textarea>
             </div>
           </div>
 

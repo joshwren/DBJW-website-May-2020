@@ -1,28 +1,19 @@
-<!-- ! tab creates a new boiler plate -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <!-- Tab icon image link -->
-  <link rel="shortcut icon" type="image/png" href="img/Logo/DBJW_logo.png">
-
-  <!-- FontAwesome style links https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself -->
-  <link href="assets/fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet">
-
-  <!-- Ekko Lightbox style links https://cdnjs.com/libraries/ekko-lightbox -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
-
-  <!-- Bootstrap CSS styles -->
-  <link rel="stylesheet" href="css/bootstrap.css">
-
-  <!-- Custom style sheet location -->
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- Add Bootstrap links https://getbootstrap.com/docs/4.4/getting-started/introduction/ -->
-  <title>DBJW Webfolio | Message Sent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+    
+      <title>DBJW Webfolio</title>
+    
+      <!-- Tab icon image link -->
+      <link rel="shortcut icon" type="image/png" href="assets/images/logos/DBJW_logo.png">
+    
+      <!-- Custom style sheet location -->
+      <link rel="stylesheet" href="message-sent.css">
+    
+      <meta name="keywords" content="graphic design, website design, website development, great graphic design">
+      <meta name="description" content="Designs by Josh Wren. Highly Experienced Graphic and Web Designer. Highly Experienced Web Developer.">
 </head>
 <body>
   <!-- PHP FORM SEND SCRIPT START HERE -->
@@ -102,26 +93,8 @@ $headers = 'From: '.$email_from."\r\n".
 @mail($email_to, $email_subject, $email_message, $headers);  
 ?>
 
-<!-- CONTENT START HERE -->
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-    
-      <title>DBJW Webfolio</title>
-    
-      <!-- Tab icon image link -->
-      <link rel="shortcut icon" type="image/png" href="assets/images/logos/DBJW_logo.png">
-    
-      <!-- Custom style sheet location -->
-      <link rel="stylesheet" href="assets/styles/message-sent.css">
-    
-      <meta name="keywords" content="graphic design, website design, website development, great graphic design">
-      <meta name="description" content="Designs by Josh Wren. Highly Experienced Graphic and Web Designer. Highly Experienced Web Developer.">
-</head>
-<body>
+<html>
 <!-- CONTENT START HERE -->
 
   <div class="message-sent">
@@ -174,10 +147,10 @@ $headers = 'From: '.$email_from."\r\n".
 <script>
 
 </script>
+</html>
 
 <?php
 }
 ?>
 
 </body>
-</html>
