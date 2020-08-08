@@ -5,10 +5,9 @@ function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("showFormLabel").style.transform = "scale(.75)";
     document.getElementById("showFormLabel").style.transition = "transform .3s ease-out";
+    
   } else {
     document.getElementById("showFormLabel").style.transform = "scale(1)";
     document.getElementById("showFormLabel").style.transition = "transform .3s ease-out";
   }
 }
-
-
