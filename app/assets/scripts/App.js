@@ -3,7 +3,7 @@ import 'lazysizes' // Lazy loading packaging import after 'npm install lazysizes
 import MobileMenu from './modules/MobileMenu'
 import ContactForm from './modules/ContactForm'
 import LogoModals from './modules/LogoModals'
-import NavButtons from './modules/NavButtons'
+import CertificateModals from './modules/CertificateModals'
 import BusinessModals from './modules/BusinessModals'
 import RevealOnScroll from './modules/RevealOnScroll'
 import StickyHeader from './modules/StickyHeader'

@@ -13,6 +13,7 @@
 
     &__photo {
         width: 100%;
+        cursor: pointer;
 
         img {
             width: 100%;
@@ -33,6 +34,12 @@
         font-size: 0.937rem;
         font-weight: 400;
         margin: 0 0 1.5rem 0;
+    }
+
+    &__logo {
+        width: 125px;
+        cursor: pointer;
+        margin-top: 8px;
     }
 
     &__list--title {
