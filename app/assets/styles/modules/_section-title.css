@@ -15,6 +15,10 @@
         margin-top: 6rem;
     }
 
+    &--certificates {
+        margin-bottom: 5rem;
+    }
+
     strong {
         font-weight: 500;
     }

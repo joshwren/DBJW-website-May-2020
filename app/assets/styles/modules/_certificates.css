@@ -1,9 +1,10 @@
 .certificates {
-    background-color: lightgray;
+    background-color: #fff;
     padding: 15px;
+    margin-bottom: 3rem;
 
     @mixin atLarge {
-        margin-bottom: 0;
+        margin-bottom: 3rem;
         padding: 1rem;
     }
 
@@ -17,6 +18,15 @@
 
         img {
             width: 100%;
+        }
+
+        :hover {
+            transform: scale(1.1);
+
+            @mixin atSmall {
+                transform: scale(1.05);
+                transition: all 0.2s ease-in-out 0s;
+            }
         }
     }
 
@@ -40,6 +50,11 @@
         width: 125px;
         cursor: pointer;
         margin-top: 8px;
+        
+        :hover {
+            opacity: .5;
+            transition: all 0.2s ease-in-out 0s;
+        } 
     }
 
     &__list--title {

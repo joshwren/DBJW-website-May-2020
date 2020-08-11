@@ -56,13 +56,8 @@
     }
 
     @mixin atSmall {
-        &__col-sm-3 {
-            float: left;
-            width: 50%;
-        }
-
         &__col-sm-6 {
-            float: left;
+            float: left !important;
             width: 50%;
         }
     }
