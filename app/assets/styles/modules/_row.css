@@ -60,6 +60,11 @@
             float: left !important;
             width: 50%;
         }
+
+        &__col-md-6 {
+            float: left !important;
+            width: 50%;
+        }
     }
     
     @mixin atMedium {
@@ -70,7 +75,7 @@
 
         /* COLUMN MD 3ettings */
         &__col-md-3 {
-            float: left;
+            float: left !important;
             width: 25%;
         }
 
@@ -84,8 +89,8 @@
         }
 
         &__col-md-6 {
-            float: left;
-            width: 50%;
+            float: left !important;
+            width: 50% !important;
         }
     
         &__col-md-8 {
@@ -135,6 +140,18 @@
 
         &__col-lg-8--smaller {
             width: 63%;
+        }
+    }
+
+    /* Begin equal height rules */
+    &--equal-height-at-sm {
+        @mixin atSmall {
+            display: flex;
+        }
+
+        & > div {
+            float: left;
+            display: flex;
         }
     }
 

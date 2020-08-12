@@ -1,11 +1,22 @@
 .certificates {
+    position: relative;
     background-color: #fff;
     padding: 15px;
     margin-bottom: 3rem;
+    min-height: auto !important;
+
+    @mixin atSmall {
+        min-height: 850px !important;
+    }
+
+    @mixin atMedium {
+        min-height: 930px !important;
+    }
 
     @mixin atLarge {
         margin-bottom: 3rem;
         padding: 1rem;
+        min-height: auto !important;
     }
 
     &--last {
@@ -27,6 +38,22 @@
                 transform: scale(1.05);
                 transition: all 0.2s ease-in-out 0s;
             }
+        }
+    }
+
+    &__header {
+        min-height: auto;
+
+        @mixin atSmall {
+            min-height: 90px;
+        }
+
+        @mixin atMedium {
+            min-height: 90px;
+        }
+
+        @mixin atLarge {
+            min-height: 125px;
         }
     }
 
@@ -69,7 +96,7 @@
         list-style: none;
         text-decoration: none;
         text-align: center;
-        margin: 0;
+        margin: 0 0 2rem 0;
         padding: 0;
     }
 
@@ -91,6 +118,13 @@
         font-weight: 400;
         margin-top: 1.5rem;
         cursor: pointer;
+
+        @mixin atSmall {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
         
         a {
             color: $mainOrange;
