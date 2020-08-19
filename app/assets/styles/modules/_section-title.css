@@ -12,11 +12,41 @@
     }
 
     &--qualifications {
-        margin-top: 6rem;
+        margin-top: 2rem;
+
+        @mixin atSmall {
+            margin-top: 6rem;
+        }
     }
 
     &--certificates {
-        margin-bottom: 5rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+
+        @mixin atSmall {
+            margin-top: 2.5rem;
+            margin-bottom: 4rem;
+        }
+    }
+
+    &--work-history {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        @mixin atSmall {
+            margin-top: 6rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &--works {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+
+        @mixin atSmall {
+            margin-top: 2.5rem;
+            margin-bottom: 3rem;
+        }
     }
 
     strong {
@@ -71,57 +101,50 @@
         }
 
         &__qualifications {
-            position: relative;
-            transform: scale(.85);
-            top: 20px;
-            margin: 0;
-            display: inline-block;
+            transform: scale(.65);
+            vertical-align: -10px;
+            margin-bottom: 0;
 
             @mixin atSmall {
-                transform: scale(.85);
+                margin-right: 0;
+                transform: scale(.8);
+                vertical-align: -10px;
             }
         }
 
         &__certificates {
-            position: relative;
             transform: scale(.85);
-            top: 25px;
-            margin-right: .5rem; 
-            margin-left: 0;
+            vertical-align: 0px;
             margin-bottom: 0;
-            display: inline-block;
 
             @mixin atSmall {
                 transform: scale(1);
+                margin-right: .5rem;
+                vertical-align: -10px;
             }
         }
 
         &__work-history {
-            position: relative;
             transform: scale(.85);
-            top: 5px;
-            margin-right: .5rem; 
-            margin-left: 0;
-            margin-bottom: 0;
-            display: inline-block;
+            vertical-align: 0px;
+            margin-bottom: .5rem;
 
             @mixin atSmall {
                 transform: scale(1);
+                margin-right: .5rem;
+                vertical-align: -5px;
             }
         }
 
-
         &__design-works {
-            position: relative;
             transform: scale(.85);
-            top: 30px;
-            margin-right: .5rem; 
-            margin-left: 0;
+            vertical-align: 0px;
             margin-bottom: 0;
-            display: inline-block;
 
             @mixin atSmall {
                 transform: scale(1);
+                margin-right: .5rem;
+                vertical-align: -25px;
             }
         }
     }
