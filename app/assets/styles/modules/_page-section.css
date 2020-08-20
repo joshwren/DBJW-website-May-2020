@@ -43,6 +43,10 @@
         }
     }
 
+    &--certificates {
+        padding-bottom: 3rem;
+    }
+
     &--work-history {
         background: url('assets/images/buildings-3-lg.jpg') top center no-repeat;
         background-size: cover;
