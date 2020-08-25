@@ -32,6 +32,10 @@
             width: 70%;
 
             @mixin atSmall {
+                width: 80%;
+            }
+
+            @mixin atMedium {
                 width: 100%;
             }
         }
