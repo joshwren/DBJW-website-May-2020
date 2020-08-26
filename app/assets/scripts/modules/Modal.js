@@ -50,7 +50,7 @@ class Modal {
           </svg>
              Connect <strong>With Me</strong></h2>
           <div class="wrapper wrapper--narrow">
-            <p class="modal__description">We will have an online order system in place soon. Until then, connect with us on any of the platforms below!</p>
+            <p class="modal__description">Connect with me in a different way!</p>
           </div>
     
           <div class="social-icons">

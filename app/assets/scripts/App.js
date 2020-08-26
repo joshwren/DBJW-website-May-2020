@@ -12,6 +12,8 @@ import StickyHeader from './modules/StickyHeader'
 let stickyHeader = new StickyHeader()
 new RevealOnScroll(document.querySelectorAll(".skills-item"), 75)
 new RevealOnScroll(document.querySelectorAll(".qualifications"), 75)
+new RevealOnScroll(document.querySelectorAll(".certificates__photo"), 75)
+new RevealOnScroll(document.querySelectorAll(".work-history"), 75)
 
 let mobileMenu = new MobileMenu();
 let modal

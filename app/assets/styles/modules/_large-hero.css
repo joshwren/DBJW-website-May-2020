@@ -44,7 +44,7 @@
     &__text-content {
         padding: 140px 0 40px 0;
         position: absolute;
-        top: 70%;
+        top: 73%;
         transform: translateY(-70%);
         left: 0;
         width: 100%;
@@ -66,7 +66,7 @@
     &__title {
         font-weight: 400;
         color: #fff;
-        font-size: 2rem; /* Super tiny screen size */
+        font-size: 3rem; /* Super tiny screen size */
         margin: 0;
         text-shadow: 3px 3px 0 rgba(0, 0, 0, .2);
         animation-name: moveInLeft;
@@ -90,7 +90,7 @@
     }
 
     hr {
-        width: 300px;
+        width: 280px;
         border-top: 1.5px solid #fff;
             animation-name: moveInCenter;
             animation-delay: 1s;

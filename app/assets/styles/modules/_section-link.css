@@ -14,6 +14,7 @@
         position: relative;
         text-decoration: none;
         cursor: pointer;
+        display: block;
     }
 
       a:before {
