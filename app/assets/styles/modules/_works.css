@@ -48,6 +48,17 @@
             outline-offset: -4px;
         }
     }
+
+    &--2-col-row-assortment {
+        /* Prevent vertical gaps */
+        line-height: 0;
+
+        img {
+            /* Just in case there are inline attributes */
+            outline: 4px solid lightgrey;
+            outline-offset: -4px;
+        }
+    }
 }
   
  

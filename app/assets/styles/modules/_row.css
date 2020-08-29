@@ -49,6 +49,11 @@
     }
 
     @mixin atVerySmall {
+        &__col-sm-3 {
+            float: left !important;
+            width: 50%;
+        }
+
         &__col-vsm-6 {
             float: left;
             width: 50%;
@@ -56,6 +61,11 @@
     }
 
     @mixin atSmall {
+        &__col-sm-3 {
+            float: left !important;
+            width: 25%;
+        }
+
         &__col-sm-6 {
             float: left !important;
             width: 50%;
