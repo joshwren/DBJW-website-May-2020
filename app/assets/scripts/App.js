@@ -5,6 +5,7 @@ import ContactForm from './modules/ContactForm'
 import LogoModals from './modules/LogoModals'
 import CertificateModals from './modules/CertificateModals'
 import BusinessModals from './modules/BusinessModals'
+import InvitationsModals from './modules/InvitationsModals'
 import RevealOnScroll from './modules/RevealOnScroll'
 import StickyHeader from './modules/StickyHeader'
 
