@@ -54,6 +54,11 @@
             width: 50%;
         }
 
+        &__col-sm-4 {
+            float: left !important;
+            width: 33.33%;
+        }
+
         &__col-vsm-6 {
             float: left;
             width: 50%;
@@ -64,6 +69,11 @@
         &__col-sm-3 {
             float: left !important;
             width: 25%;
+        }
+
+        &__col-sm-4 {
+            float: left !important;
+            width: 33.33%;
         }
 
         &__col-sm-6 {
