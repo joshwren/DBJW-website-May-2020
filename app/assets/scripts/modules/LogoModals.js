@@ -7,6 +7,7 @@ var logosModal05 = document.getElementById("logosModal05");
 var logosModal06 = document.getElementById("logosModal06");
 var logosModal07 = document.getElementById("logosModal07");
 var logosModal08 = document.getElementById("logosModal08");
+var logosModal09 = document.getElementById("logosModal09");
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var logoWorksImg01 = document.getElementById("logoWorksImg01");
 var logoWorksImg02 = document.getElementById("logoWorksImg02");
@@ -16,6 +17,7 @@ var logoWorksImg05 = document.getElementById("logoWorksImg05");
 var logoWorksImg06 = document.getElementById("logoWorksImg06");
 var logoWorksImg07 = document.getElementById("logoWorksImg07");
 var logoWorksImg08 = document.getElementById("logoWorksImg08");
+var logoWorksImg09 = document.getElementById("logoWorksImg09");
 var logoModalImg01 = document.getElementById("logosImg01");
 var logoModalImg02 = document.getElementById("logosImg02");
 var logoModalImg03 = document.getElementById("logosImg03");
@@ -24,6 +26,7 @@ var logoModalImg05 = document.getElementById("logosImg05");
 var logoModalImg06 = document.getElementById("logosImg06");
 var logoModalImg07 = document.getElementById("logosImg07");
 var logoModalImg08 = document.getElementById("logosImg08");
+var logoModalImg09 = document.getElementById("logosImg09");
 // var captionText = document.getElementById("caption");
 logoWorksImg01.onclick = function(){
     logosModal01.style.display = "block";
@@ -58,6 +61,10 @@ logoWorksImg08.onclick = function(){
     logosModal08.style.display = "block";
     logosImg08.src = this.src;
 }
+logoWorksImg09.onclick = function(){
+  logosModal09.style.display = "block";
+  logosImg09.src = this.src;
+}
 // Get the <span> element that closes the modal
 var logosModalClose01 = document.getElementsByClassName("logosModalClose01")[0];
 var logosModalClose02 = document.getElementsByClassName("logosModalClose02")[0];
@@ -67,6 +74,7 @@ var logosModalClose05 = document.getElementsByClassName("logosModalClose05")[0];
 var logosModalClose06 = document.getElementsByClassName("logosModalClose06")[0];
 var logosModalClose07 = document.getElementsByClassName("logosModalClose07")[0];
 var logosModalClose08 = document.getElementsByClassName("logosModalClose08")[0];
+var logosModalClose09 = document.getElementsByClassName("logosModalClose09")[0];
 // When the user clicks on <span> (x), close the modal
 logosModalClose01.onclick = function() {
     logosModal01.style.display = "none";
@@ -91,4 +99,7 @@ logosModalClose07.onclick = function() {
   }
 logosModalClose08.onclick = function() {
     logosModal08.style.display = "none";
+  }
+ logosModalClose09.onclick = function() {
+    logosModal09.style.display = "none";
   }
