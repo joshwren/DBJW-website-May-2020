@@ -117,7 +117,7 @@ input.showForm {
   
   &:checked + .form {
     width: 95%;
-    height: 75%;
+    height: 85%;
     box-shadow: 4px 5px 5px 5px darken($lightBg, 30%);
     overflow: auto;
     transition: width .5s ease, height .5s ease .5s;
@@ -165,26 +165,3 @@ input.showForm {
     fill: #fff;
   }
 }
-/*
-#showFormLabel--red {
-  background-color: red !important;
-}
-
-#formClose {
-  display: block;
-  cursor: pointer;
-  width: 4rem;
-  height: 4rem;
-  line-height: 3rem;
-  background-color: red;
-  border-radius: 100%;
-  text-align: center;
-  position: fixed;
-  bottom: 1.5rem;
-  right: 1.5rem;
-  z-index: 2;
-}
-
-#contactClose {
-  display: none;
-}*/
